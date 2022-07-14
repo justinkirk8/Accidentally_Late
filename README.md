@@ -6,6 +6,7 @@ Traffic accidents was chosen as our team topic. We are curous to see how much af
 - Description of the Source of Data
 - Questions Hoped to Answer with the Data
 ## GitHub Repository
+Justin Kirk is the keeper of the GitHub Repository.  The Repository has a branch setup for each of the 6 members.
 ### - One Branch Per Team Member
 ### - Each team member has at least 4 commits for the duration of the first segment
 ## Machine Learning Model
