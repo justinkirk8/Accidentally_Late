@@ -10,8 +10,9 @@ Justin Kirk is the keeper of the GitHub Repository.
 ### - One Branch Per Team Member
  - Branches manually created for each team member
  - All work in progress aside from editing the ReadMe should be done in personal branch first
- - Free version of Git does not allow for merging to require approval. Due to this, be extra careful to pull and watch for conflicts when merging.
+ - Free version of Git does not allow for merging to require approval. Due to this, be extra careful to pull prior to merging and watch for conflicts.
 ### - Each team member has at least 4 commits for the duration of the first segment
+ - Be sure to commit as you go so that we can hit this goal.
 ## Machine Learning Model
 ### - Takes in Data From the Provisional Database
 ### - Outputs Label for Input Data
