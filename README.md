@@ -6,8 +6,11 @@ Traffic accidents was chosen as our team topic. We are curous to see how much af
 - Description of the Source of Data
 - Questions Hoped to Answer with the Data
 ## GitHub Repository
-Justin Kirk is the keeper of the GitHub Repository.  The Repository has a branch setup for each of the 6 members.
+Justin Kirk is the keeper of the GitHub Repository.
 ### - One Branch Per Team Member
+ - Branches manually created for each team member
+ - All work in progress aside from editing the ReadMe should be done in personal branch first
+ - Free version of Git does not allow for merging to require approval. Due to this, be extra careful to pull and watch for conflicts when merging.
 ### - Each team member has at least 4 commits for the duration of the first segment
 ## Machine Learning Model
 ### - Takes in Data From the Provisional Database
