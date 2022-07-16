@@ -7,6 +7,20 @@ Traffic accidents was chosen as our team topic. We are curious to see how much e
 - Questions Hoped to Answer with the Data
 ## Research Question
 - What impact has COVID had on the severity of car accidents in the US?
+## Clean Dataset Description
+The dataset was pulled from the following link: https://smoosavi.org/datasets/us_accidents
+
+### Description of the Data Included
+The dataset included 47 columns, however, we only included the following columns for the purpose of this project...
+- Severity	: Shows the severity of the accident, a number between 1 and 4, where 1 indicates the least impact on traffic (i.e., short delay as a result of the accident) and 4 indicates a significant impact on traffic (i.e., long delay).
+- Start_Time: Shows start time of the accident in local time zone.
+- State: Shows the state in address field.
+- Temperature(F): Shows the temperature (in Fahrenheit).
+- Visibility(mi): Shows visibility (in miles).
+- Wind_Speed(mph): Shows wind speed (in miles per hour).
+- Precipitation(in): Shows precipitation amount in inches, if there is any.
+- Weather_Condition: Shows the weather condition (rain, snow, thunderstorm, fog, etc.)
+- Sunrise_Sunset: Shows the period of day (i.e. day or night) based on sunrise/sunset.
 
 ## GitHub Repository
 Justin Kirk is the keeper of the GitHub Repository.
