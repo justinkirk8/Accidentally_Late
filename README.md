@@ -5,6 +5,9 @@ Traffic accidents was chosen as our team topic. We are curious to see how much e
 - Reason Topic Was Selected
 - Description of the Source of Data
 - Questions Hoped to Answer with the Data
+## Research Question
+- What impact has COVID had on the severity of car accidents in the US?
+
 ## GitHub Repository
 Justin Kirk is the keeper of the GitHub Repository.
 ### - One Branch Per Team Member
