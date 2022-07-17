@@ -10,7 +10,7 @@ Traffic accidents was chosen as our team topic. We are curious to see how much e
 ## Clean Dataset Description
 The dataset was pulled from the following link: https://smoosavi.org/datasets/us_accidents
 
-### Description of the Data Included
+### Description of the Data
 The dataset included 47 columns, however, we only included the following columns for the purpose of this project...
 - Severity	: Shows the severity of the accident, a number between 1 and 4, where 1 indicates the least impact on traffic (i.e., short delay as a result of the accident) and 4 indicates a significant impact on traffic (i.e., long delay).
 - Start_Time: Shows start time of the accident in local time zone.
