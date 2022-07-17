@@ -22,6 +22,11 @@ The dataset included 47 columns, however, we only included the following columns
 - Weather_Condition: Shows the weather condition (rain, snow, thunderstorm, fog, etc.)
 - Sunrise_Sunset: Shows the period of day (i.e. day or night) based on sunrise/sunset.
 
+Additional tasks to be completed as we continue the research to narrow down the results...
+- Potenitally grouping the Severity column into 2 bins; Minor Accidents: serverity 1 & 2, Major Accidents: severity 3 & 4
+- Find a way to group the Start_Time column into a few bins, maybe into increments of every 4-6 hours
+- Potentially grouping the Visibilitycolumn into 4 bins; 10 -> high visibility, 7-9 -> decent visibility, 4-6 poor visibility, 0-3 low visibility
+
 ## GitHub Repository
 Justin Kirk is the keeper of the GitHub Repository.
 ### - One Branch Per Team Member
