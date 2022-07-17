@@ -26,6 +26,7 @@ Additional tasks to be completed as we continue the research to narrow down the 
 - Potenitally grouping the Severity column into 2 bins; Minor Accidents: serverity 1 & 2, Major Accidents: severity 3 & 4
 - Find a way to group the Start_Time column into a few bins, maybe into increments of every 4-6 hours
 - Potentially grouping the Visibilitycolumn into 4 bins; 10 -> high visibility, 7-9 -> decent visibility, 4-6 poor visibility, 0-3 low visibility
+- Since we are focusing on COVID, we may need to take the 'year' column and break the years into two bins; PreCOVID (up to 2020) and PostCOVID (from 2020 forward) *we may have some wiggle room on those dates*
 
 ## GitHub Repository
 Justin Kirk is the keeper of the GitHub Repository.
