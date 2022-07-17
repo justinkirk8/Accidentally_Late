@@ -28,6 +28,8 @@ Additional tasks to be completed as we continue the research to narrow down the 
 - Potentially grouping the Visibilitycolumn into 4 bins; 10 -> high visibility, 7-9 -> decent visibility, 4-6 poor visibility, 0-3 low visibility
 - Since we are focusing on COVID, we may need to take the 'year' column and break the years into two bins; PreCOVID (up to 2020) and PostCOVID (from 2020 forward) *we may have some wiggle room on those dates*
 
+![Research_Question_Diagram](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/ResearchQuestion_Diagram.png)
+
 ## GitHub Repository
 Justin Kirk is the keeper of the GitHub Repository.
 ### - One Branch Per Team Member
