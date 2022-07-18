@@ -39,8 +39,16 @@ Justin Kirk is the keeper of the GitHub Repository.
 ### - Each team member has at least 4 commits for the duration of the first segment
  - Be sure to commit as you go so that we can hit this goal.
 ## Machine Learning Model
-### - Takes in Data From the Provisional Database
-### - Outputs Label for Input Data
+
+### Machine Learning Diagram - prelimary flowchart
+![Accidental_Tourist/Machine_Learning_Model "Machine_Learning_Diagram"](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Machine_Learning_Model/Machine_Learning_Diagram.pdf)
+
+### - Takes in Data From the Provisional Database - first cut on raw data
+![Accidental_Tourist/Machine_Learning_Model "Week_1_MLM.ipynb"](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Machine_Learning_Model/Week_1_MLM.ipynb)
+
+### - Outputs Label for Input Data - first cut on selected features
+![Accidental_Tourist/Machine_Learning_Model "Selected_Columns_MLM"](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Machine_Learning_Model/Selected_Columns_MLM.png)
+
 ## Database Integration
 ### - Sample Data that Mimics the expected final database structure or schema
 ### - Draft machine learning model is connected to the provisional database
