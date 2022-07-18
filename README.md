@@ -39,6 +39,10 @@ Justin Kirk is the keeper of the GitHub Repository.
 ### - Each team member has at least 4 commits for the duration of the first segment
  - Be sure to commit as you go so that we can hit this goal.
 ## Machine Learning Model
+### MLM Preliminary Diagram
+![Accidental_Tourist "file_name_visual"](![Repo_Name "file_name_visual"](https://github.com/Ninax3/link to png file.png)![image](https://user-images.githubusercontent.com/100636531/179620970-f6a05b02-b9eb-4e54-bb1a-454ec211b277.png)
+)
+
 ### - Takes in Data From the Provisional Database
 ### - Outputs Label for Input Data
 ## Database Integration
