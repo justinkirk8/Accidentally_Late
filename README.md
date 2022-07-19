@@ -39,6 +39,7 @@ Justin Kirk is the keeper of the GitHub Repository.
 ### - Each team member has at least 4 commits for the duration of the first segment
  - Be sure to commit as you go so that we can hit this goal.
 ## Machine Learning Model
+
 ### Machine Learning Diagram - prelimary flowchart
 ![Accidental_Tourist/Machine_Learning_Model "Machine_Learning_Diagram"](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Machine_Learning_Model/Machine_Learning_Diagram.pdf)
 ### - Takes in Data From the Provisional Database - first cut on raw data
@@ -47,11 +48,14 @@ Justin Kirk is the keeper of the GitHub Repository.
 ![Accidental_Tourist/Machine_Learning_Model "Selected_Columns_MLM"](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Machine_Learning_Model/Selected_Columns_MLM.png
 =======
 ### MLM Preliminary Diagram
-![Accidental_Tourist "file_name_visual"](![Repo_Name "file_name_visual"](https://github.com/Ninax3/link to png file.png)![image](https://user-images.githubusercontent.com/100636531/179620970-f6a05b02-b9eb-4e54-bb1a-454ec211b277.png)
-)
+See diagram here, https://github.com/justinkirk8/Accidental_Tourist/blob/main/Machine_Learning_Model/Machine_Learning_Diagram.pdf
 
 ### - Takes in Data From the Provisional Database
+See code here, https://github.com/justinkirk8/Accidental_Tourist/blob/main/Machine_Learning_Model/Week_1_MLM.ipynb
+
 ### - Outputs Label for Input Data
+![Accidental_Tourist "Week_1_MLM.ipynb"](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Machine_Learning_Model/Selected_Columns_MLM.png)
+
 
 ## Database Integration
 ### - Sample Data that Mimics the expected final database structure or schema
