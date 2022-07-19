@@ -28,7 +28,9 @@ Additional tasks to be completed as we continue the research to narrow down the 
 - Potentially grouping the Visibilitycolumn into 4 bins; 10 -> high visibility, 7-9 -> decent visibility, 4-6 poor visibility, 0-3 low visibility
 - Since we are focusing on COVID, we may need to take the 'year' column and break the years into two bins; PreCOVID (up to 2020) and PostCOVID (from 2020 forward) *we may have some wiggle room on those dates*
 
-![Research_Question_Diagram](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/ResearchQuestion_Diagram.png)
+<p align="center">
+  <img src="https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/ResearchQuestion_Diagram.png" width="600" />
+</p>
 
 ## GitHub Repository
 Justin Kirk is the keeper of the GitHub Repository.
@@ -40,15 +42,8 @@ Justin Kirk is the keeper of the GitHub Repository.
  - Be sure to commit as you go so that we can hit this goal.
 ## Machine Learning Model
 
-### Machine Learning Diagram - prelimary flowchart
-![Accidental_Tourist/Machine_Learning_Model "Machine_Learning_Diagram"](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Machine_Learning_Model/Machine_Learning_Diagram.pdf)
-### - Takes in Data From the Provisional Database - first cut on raw data
-![Accidental_Tourist/Machine_Learning_Model "Week_1_MLM.ipynb"](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Machine_Learning_Model/Week_1_MLM.ipynb)
-### - Outputs Label for Input Data - first cut on selected features
-![Accidental_Tourist/Machine_Learning_Model "Selected_Columns_MLM"](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Machine_Learning_Model/Selected_Columns_MLM.png
-=======
 ### MLM Preliminary Diagram
-See diagram here, https://github.com/justinkirk8/Accidental_Tourist/blob/main/Machine_Learning_Model/Machine_Learning_Diagram.pdf
+![Accidental_Tourist/Machine_Learning_Model "Machine_Learning_Diagram"](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Machine_Learning_Model/Machine_Learning_Diagram.png)
 
 ### - Takes in Data From the Provisional Database
 See code here, https://github.com/justinkirk8/Accidental_Tourist/blob/main/Machine_Learning_Model/Week_1_MLM.ipynb
