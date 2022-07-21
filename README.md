@@ -29,6 +29,39 @@ Additional tasks to be completed as we continue the research to narrow down the 
   <img src="https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/ResearchQuestion_Diagram.png" width="600" />
 </p>
 
+### Initial Data Outputs
+
+After cleaning the data, we were able to create two seperate dataframes, one for accidents that occured PreCOVID and another for accidents that has occured after COVID was declared a pandemic in the US. 
+- For the PreCOVID dataframe, we used the date range of June 01, 2018 - Februray 29, 2020
+- For the COVID dataframe, we used the date range of March 01, 2020 - December 31, 2021
+
+PreCOVID_accidents Dataframe
+
+![PreCOVID_Dataframe](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/PreCOVID_data.png)
+
+COVID_accidents Dataframe
+
+![COVID_Dataframe](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/COVID_data.png)
+
+With the data cleaned and seperated, we ran the value count function to compare both dateframes to each other and to the orginial cleaned dataframe (accidents_updated)
+
+Severity Comparison
+
+![Severity](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Severity_Counts.png)
+
+Top 5 States Comparison
+
+![States1](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Top5_overall_count.png)
+![States2](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Top5_PreCOVID_count.png)
+![States3](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Top5_COVID_count.png)
+
+Sunset_Sunrise Comparison
+
+![Sunrise_Sunset](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Sunrise_Sunset-Counts.png)
+
+Year Comparison
+
+![Years](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Year_Counts.png)
 ## GitHub Repository
 Justin Kirk is the keeper of the GitHub Repository.
 ### - One Branch Per Team Member
