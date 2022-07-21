@@ -53,7 +53,7 @@ We can see there was a slight increase in the severity of accidents that were cl
 
 Top 5 States Comparison
 
-While California remains the State with the most accidents both PreCOVID and COVID, we see Florida jumps to second highest State with accidents occurring in the COVID-accidents data while Texas, Oregan and Virgina also see an increase of accidents bringing them into the top 5 states moving Pennsylvania out of the top 5 states.
+While California remains the State with the most accidents both PreCOVID and during COVID, we see Florida jump to second highest State with accidents occurring in the COVID-accidents data with Texas, Virgina and Pennsylvania also seeing an increase in accidents which brings them into the top 5 states moving Oregan, Minnesota and Utah out of the top 5 states.
 
 ![States1](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Top5_overall_count.png)
 ![States2](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Top5_PreCOVID_count.png)
@@ -61,7 +61,7 @@ While California remains the State with the most accidents both PreCOVID and COV
 
 Sunset_Sunrise Comparison
 
-We can see the trend continue where there are more accidents that occur during the day than at night. 
+We can see the trend continue where there are more accidents that occur during the day than at night. However, in the COVID_accidents data, we see a decrease in the total number of accidents occuring at night.
 
 ![Sunrise_Sunset](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Sunrise_Sunset-Counts.png)
 
