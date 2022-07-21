@@ -47,9 +47,13 @@ With the data cleaned and seperated, we ran the value count function to compare 
 
 Severity Comparison
 
+We can see there was a slight increase in the severity of accidents that were classified as level 4 during the COVID years as opposed to PreCOVID.
+
 ![Severity](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Severity_Counts.png)
 
 Top 5 States Comparison
+
+While California remains the State with the most accidents both PreCOVID and COVID, we see Florida jumps to second highest State with accidents occurring in the COVID-accidents data while Texas, Oregan and Virgina also see an increase of accidents bringing them into the top 5 states moving Pennsylvania out of the top 5 states.
 
 ![States1](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Top5_overall_count.png)
 ![States2](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Top5_PreCOVID_count.png)
@@ -57,11 +61,16 @@ Top 5 States Comparison
 
 Sunset_Sunrise Comparison
 
+We can see the trend continue where there are more accidents that occur during the day than at night. 
+
 ![Sunrise_Sunset](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Sunrise_Sunset-Counts.png)
 
 Year Comparison
 
+Much like the overall trend of accidents occurring, we see an increase in the number of accidents with each year with the most accidents reported in 2021 for all three dataframes. 
+
 ![Years](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Year_Counts.png)
+
 ## GitHub Repository
 Justin Kirk is the keeper of the GitHub Repository.
 ### - One Branch Per Team Member
