@@ -19,12 +19,6 @@ The dataset included 47 columns, however, we only included the following columns
 - Weather_Condition: Shows the weather condition (rain, snow, thunderstorm, fog, etc.)
 - Sunrise_Sunset: Shows the period of day (i.e. day or night) based on sunrise/sunset.
 
-Additional tasks to be completed as we continue the research to narrow down the results...
-- Potenitally grouping the Severity column into 2 bins; Minor Accidents: serverity 1 & 2, Major Accidents: severity 3 & 4
-- Find a way to group the Start_Time column into a few bins, maybe into increments of every 4-6 hours
-- Potentially grouping the Visibilitycolumn into 4 bins; 10 -> high visibility, 7-9 -> decent visibility, 4-6 poor visibility, 0-3 low visibility
-- Since we are focusing on COVID, we may need to take the 'year' column and break the years into two bins; PreCOVID (up to 2020) and PostCOVID (from 2020 forward) *we may have some wiggle room on those dates*
-
 <p align="center">
   <img src="https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/ResearchQuestion_Diagram.png" width="600" />
 </p>
@@ -35,23 +29,32 @@ After cleaning the data, we were able to create two seperate dataframes, one for
 - For the PreCOVID dataframe, we used the date range of June 01, 2018 - Februray 29, 2020
 - For the COVID dataframe, we used the date range of March 01, 2020 - December 31, 2021
 
-PreCOVID_accidents Dataframe
+#### PreCOVID_accidents Dataframe
 
 ![PreCOVID_Dataframe](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/PreCOVID_data.png)
 
-COVID_accidents Dataframe
+#### COVID_accidents Dataframe
 
 ![COVID_Dataframe](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/COVID_data.png)
 
 With the data cleaned and seperated, we ran the value count function to compare both dateframes to each other and to the orginial cleaned dataframe (accidents_updated)
 
-Severity Comparison
+#### Severity Comparison
 
 We can see there was a slight increase in the severity of accidents that were classified as level 4 during the COVID years as opposed to PreCOVID.
 
 ![Severity](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Severity_Counts.png)
 
-Top 5 States Comparison
+We used the following code to group the Severity column into two categories; short_delay and long_delay
+
+![Severity_Code](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Severity_BinCode.png)
+
+We then ran the comparison on the two categories and the results agree with the overall trend we are seeing, there were more accidents reported in the COVID_accidents
+data than the PreCOVID_accidents data and there are significantly more car accidents classified as "short_delay" however we can see an increase in "long_delay" accidents in the COVID_accidents dataframe. 
+
+![Severity_Comparison](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Severity_Binned_Comparison.png)
+
+#### Top 5 States Comparison
 
 While California remains the State with the most accidents both PreCOVID and during COVID, we see Florida jump to second highest State with accidents occurring in the COVID-accidents data with Texas, Virgina and Pennsylvania also seeing an increase in accidents which brings them into the top 5 states moving Oregan, Minnesota and Utah out of the top 5 states.
 
@@ -59,17 +62,40 @@ While California remains the State with the most accidents both PreCOVID and dur
 ![States2](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Top5_PreCOVID_count.png)
 ![States3](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Top5_COVID_count.png)
 
-Sunset_Sunrise Comparison
+We decided not to group the States into categories for this portion of the research, however we reconginze more analysis can be run to dive deeper into the State comparison in relation to COVID lockdowns potentially for a future study.
+  - Potential Research Question: What impact did the COVID lockdown/quaratine have on the number and severity of car accidents in each state in the US?
+  
+#### Sunset_Sunrise Comparison
 
 We can see the trend continue where there are more accidents that occur during the day than at night. However, in the COVID_accidents data, we see a decrease in the total number of accidents occuring at night.
 
 ![Sunrise_Sunset](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Sunrise_Sunset-Counts.png)
 
-Year Comparison
+Since this column is already catergorized by "night" and "day", we decided not to catergorize the column any further. 
+
+#### Weather Conditions Comparison
+
+There were 127 different categories of weather condititions included in the original data including categories such as fair, heavy rain, overcast, thunderstorms, etc.
+
+We first needed to run an array to be able to see all of the categories included. 
+
+![Array](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/WeatherConditions_Array.png)
+
+From there we grouped those categories into two categories; "clear_weather", "bad_weather"
+
+![Weather_Code](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/WeatherConditions_BinCode.png)
+
+We can see an overall trend of more accidents were reported during "clear_weather" than "bad_weather", however, there was a decline of accidents reported in the COVID_accidents dataframe than in the PreCOVID_accidents dataframe.
+
+![Weather_comparison](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/WeatherConditions_Binned_Comparison.png)
+
+#### Year Comparison
 
 Much like the overall trend of accidents occurring, we see an increase in the number of accidents with each year with the most accidents reported in 2021 for all three dataframes. 
 
 ![Years](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Year_Counts.png)
+
+For the comparsion portion of the student we decided not to include the 'Temperature(F)', 'Visibility(mi)', 'Wind_Speed(mph)', 'Precipitation(in)' columns, however, they will be included under as weather variables in the Machine Learning portion of the project.
 
 ## GitHub Repository
 Justin Kirk is the keeper of the GitHub Repository.
