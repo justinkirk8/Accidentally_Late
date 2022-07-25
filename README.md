@@ -128,6 +128,6 @@ See code here, https://github.com/justinkirk8/Accidental_Tourist/blob/main/Machi
 ### - Sample Data that Mimics the expected final database structure or schema
 ### - Draft machine learning model is connected to the provisional database
 ## Dashboard
-### - A bar chart showing the total US volume of accidents for 2016 - 2021
-### - A map showing the US states and their volume of accidents for 2018 -2019
-### - A map showing the US states and their volume of accidents for 2020 - 2021
+### - A linechart showing the total US volume of accidents for 2016 - 2021
+### - A line chart showing volume of accidents for 2018 -2019 per time to clean up the accident
+### - A line chart showing volume of accidents for 2020 - 2021 per time to clean up the accident
