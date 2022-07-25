@@ -52,12 +52,12 @@ We can see there was a slight increase in the severity of accidents that were cl
 
 ![Severity](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Severity_Counts.png)
 
-We used the following code to group the Severity column into two categories; short_delay and long_delay
+We used the following code to group the Severity column into two categories; short_delay and long_delay.
 
 ![Severity_Code](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Severity_BinCode.png)
 
 We then ran the comparison on the two categories and the results agree with the overall trend we are seeing, there were more accidents reported in the COVID_accidents
-data than the PreCOVID_accidents data and there are significantly more car accidents classified as "short_delay" however we can see an increase in "long_delay" accidents in the COVID_accidents dataframe. 
+data than the PreCOVID_accidents data and there are significantly more car accidents classified as "short_delay".
 
 ![Severity_Comparison](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Severity_Binned_Comparison.png)
 
@@ -74,7 +74,7 @@ We decided not to group the States into categories for this portion of the resea
   
 #### Sunset_Sunrise Comparison
 
-We can see the trend continue where there are more accidents that occur during the day than at night. However, in the COVID_accidents data, we see a decrease in the total number of accidents occuring at night.
+We can see the trend continue where there are more accidents that occur during the day than at night.
 
 ![Sunrise_Sunset](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Sunrise_Sunset-Counts.png)
 
@@ -92,7 +92,7 @@ From there we grouped those categories into two categories; "clear_weather", "ba
 
 ![Weather_Code](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/WeatherConditions_BinCode.png)
 
-We can see an overall trend of more accidents were reported during "clear_weather" than "bad_weather", however, there was a decline of accidents reported in the COVID_accidents dataframe than in the PreCOVID_accidents dataframe.
+We can see an overall trend of more accidents were reported during "clear_weather" than "bad_weather".
 
 ![Weather_comparison](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/WeatherConditions_Binned_Comparison.png)
 
