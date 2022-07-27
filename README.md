@@ -6,12 +6,9 @@ Traffic accidents was chosen as our team topic. We are curious to see how much e
 
 CSVs:
 
-original (columns paired down)
-
+cleaned
+ 
 - Accidents_updated.csv:          https://accidental-tourist-justinkirk8.s3.amazonaws.com/accidents_updated.csv
-
-cleaned                           
-
 - PreCOVID_accidents.csv:         https://accidental-tourist-justinkirk8.s3.amazonaws.com/PreCOVID_accidents.csv
 - COVID_accidents.csv:            https://accidental-tourist-justinkirk8.s3.amazonaws.com/COVID_accidents.csv
 - Accidents_merged.csv:           https://accidental-tourist-justinkirk8.s3.amazonaws.com/accidents_merged.csv
