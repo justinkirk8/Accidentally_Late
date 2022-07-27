@@ -56,4 +56,18 @@ CREATE TABLE US_State_Region (
 	Division VARCHAR(40) NOT NULL
 );
 
-
+-- create sample merge table
+DROP TABLE accidents_sample_merged;
+CREATE TABLE accidents_sample_merged (
+ 	severity VARCHAR(40) NOT NULL,
+	state_code VARCHAR(40) NOT NULL,
+	temperature_f NUMERIC NOT NULL,
+	visibility_mi NUMERIC NOT NULL,
+	wind_speed_mph NUMERIC NOT NULL,
+	precipitation_in NUMERIC NOT NULL,
+	weather_condition VARCHAR(40) NOT NULL,
+	sunrise_sunset VARCHAR(40) NOT NULL,
+	year NUMERIC NOT NULL,
+	date DATE NOT NULL,
+	classification VARCHAR(40) NOT NULL
+);
