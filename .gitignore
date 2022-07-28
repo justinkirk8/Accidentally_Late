@@ -3,6 +3,9 @@ accidents_updated.csv
 accidents_merged.csv
 COVID_accidents.csv
 PreCOVID_accidents.csv
+accidents_joined.csv
+COVID_accidents_joined.csv
+PreCOVID_accidents_joined.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
