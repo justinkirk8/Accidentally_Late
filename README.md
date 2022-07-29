@@ -65,9 +65,11 @@ After cleaning the data, we were able to create two seperate dataframes, one for
 
 ![COVID_Dataframe](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/COVID_data.png)
 
+![Date_Range](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated_Images/DateRange.png)
+
 ### Data Exploration 
 
-![DataExploration]( https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated%20Images/Data_Exploration.png)
+![DataExploration](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated_Images/Data_Exploration.png)
 
 #### Dataframe Exploration	
 
@@ -85,7 +87,7 @@ o	There were 1,928,431 accidents that occurred during the March 2020-December 20
 
 The resulting percentages (in relation to the initial dataset) for the dataframes is as follows…
 
-![DataFrameRelationship]( https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated%20Images/DataFrame_Relationship.png)
+![DataFrameRelationship](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated_Images/DataFrame_Relationship.png)
 
 *NOTE-We recognize there is a significant difference between the number of accidents that occurred during the “PreCOVID” timeframe and the “COVID” timeframe by 1,651,390 accidents. There are many factors that could be impacting this difference, however for the purposes of this project, we will not be analyzing those factors*
 
@@ -93,7 +95,7 @@ The resulting percentages (in relation to the initial dataset) for the dataframe
 
 -	What is the average per dataframe for the following columns: “severity”, “temperature_f”, “visibility_mi”, “wind_speed_mph”, and “precipitation_in”? Are there any significant differences between the averages?
 
-![Average_Comparisons]( https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated%20Images/Averages_Comparison.png)
+![Average_Comparisons](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated_Images/Averages_Comparison.png)
 
 *ADD TO THIS SECTION LATER*
 
@@ -105,13 +107,13 @@ Severity Comparison
 
 We can see there was a slight increase in the severity of accidents that were classified as level 4 during the COVID years as opposed to PreCOVID.
 
-![SeverityTable]( https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated%20Images/Severity_Count_table.png)
+![SeverityTable](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated_Images/Severity_Count_table.png)
 
 Top 5 States Comparison
 
 While California remains the State with the most accidents both PreCOVID and during COVID, we see Florida jump to second highest State with accidents occurring in the COVID-accidents data with Texas, Virgina and Pennsylvania also seeing an increase in accidents which brings them into the top 5 states moving Oregan, Minnesota and Utah out of the top 5 states.
 
-![TopStates]( https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated%20Images/Top5_States_table.png)
+![TopStates](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated_Images/Top5_States_table.png)
 
 We decided not to group the States into categories for this portion of the research, however we recognize more analysis can be run to dive deeper into the State comparison in relation to COVID lockdowns potentially for a future study.
 
@@ -123,7 +125,7 @@ Sunset_Sunrise Comparison
 
 We can see the trend continue where there are more accidents that occur during the day than at night.
 
-![SunriseTable]( https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated%20Images/SunriseSunset_Count_table.png)
+![SunriseTable](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated_Images/SunriseSunset_Count_table.png)
 
 Since this column is already categorized by "night" and "day", we decided not to categorize the column any further. 
 
@@ -132,13 +134,14 @@ Weather Conditions Comparison
 There were 127 different categories of weather conditions included in the original data including categories such as fair, heavy rain, overcast, thunderstorms, etc. 
 Therefore, we decided to review the top 5 weather conditions much like we did for the state comparison. We can see that both the PreCOVID and COVID dataframes follow the trend of the accidents_updated dataframe with Fair, Cloudly, Mostly Cloudy, and Light Rain being the top 5 weather conditions reported during the occurrence of accidents. 
 
-![TopWeather]( https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated%20Images/Top5_Weather_table.png)
+![TopWeather](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated_Images/Top5_Weather_table.png)
 
 Year Comparison
 
 Much like the overall trend of accidents occurring, we see an increase in the number of accidents with each year with the most accidents reported in 2021 for all three dataframes. 
 
 ![Years](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Year_Counts.png)
+
 *ADD UPDATED IMAGE*
 
 
