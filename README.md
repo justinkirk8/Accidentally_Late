@@ -21,11 +21,15 @@ joined
 
 ## Research Question
 - What impact has COVID had on the severity of car accidents in the US?
+
 ## Clean Dataset Description
+
 The dataset was pulled from the following link: https://smoosavi.org/datasets/us_accidents
 
 ### Description of the Data
+
 The dataset included 47 columns, however, we only included the following columns for the purpose of this project...
+
 - Severity	: Shows the severity of the accident, a number between 1 and 4, where 1 indicates the least impact on traffic (i.e., short delay as a result of the accident) and 4 indicates a significant impact on traffic (i.e., long delay).
 - Start_Time: Shows start time of the accident in local time zone.
 - State: Shows the state in address field.
@@ -36,83 +40,110 @@ The dataset included 47 columns, however, we only included the following columns
 - Weather_Condition: Shows the weather condition (rain, snow, thunderstorm, fog, etc.)
 - Sunrise_Sunset: Shows the period of day (i.e. day or night) based on sunrise/sunset.
 
-<p align="center">
-  <img src="https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/ResearchQuestion_Diagram.png" width="600" />
-</p>
+### Data Cleaning Process
 
-### Initial Data Outputs
+In cleaning the data, we following the following steps…
 
-After cleaning the data, we were able to create two seperate dataframes, one for accidents that occured PreCOVID and another for accidents that has occured after COVID was declared a pandemic in the US. 
+-	Step 1: Imported the US_Accidents_Dec21_updated.csv file
+-	Step 2: Ran the row_count function to get a count of how many rows (data points) were in the initial dataset, “accidents” The code returned a total number of 2,845,342 accidents reported during the time frame of January 01, 2016 – December 31, 2021 in the US. This also allowed us to review the header for the all the columns in the dataset.
+-	Step 3: Created an updated dataframe (accidents_updated) keeping the 9 columns previously identified.
+-	Step 4: Removed all NaN values from the accidents_upated dataframe
+-	Step 5: Ran the row_count function to get a count of the remaining rows in the dataset. The code retuned a new total of 2,245,420 accidents reports removing 599,922 accidents.
+-	Step 6: Created a “year” column pulling out the year reported in the “Start_Time” column
+-	Step 7: Created a “date” column pulling out the date reported in the “Start_Time” column. As well, changed the date column type from object to integer.
+-	Step 8: Dropped the “Start_Time” column since the information extracted from that column was used to create two new columns and with the size of the dataset we wanted to reduce as many inputs as possible
+-	Step 9: Renamed the columns names for ease of use in SQL
+-	Step 10: Ran row_count function to make sure no rows were lost in the previous steps
+
+After cleaning the data, we were able to create two seperate dataframes, one for accidents that occured PreCOVID and another for accidents that has occured after COVID was declared a pandemic in the US. Each dataset consisted of 21 months.
+
 - For the PreCOVID dataframe, we used the date range of June 01, 2018 - Februray 29, 2020
-- For the COVID dataframe, we used the date range of March 01, 2020 - December 31, 2021
-
-#### PreCOVID_accidents Dataframe
 
 ![PreCOVID_Dataframe](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/PreCOVID_data.png)
 
-#### COVID_accidents Dataframe
+- For the COVID dataframe, we used the date range of March 01, 2020 - December 31, 2021
 
 ![COVID_Dataframe](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/COVID_data.png)
 
-With the data cleaned and seperated, we ran the value count function to compare both dateframes to each other and to the orginial cleaned dataframe (accidents_updated)
+![Date_Range](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated_Images/DateRange.png)
 
-#### Severity Comparison
+### Data Exploration 
+
+![DataExploration](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated_Images/Data_Exploration.png)
+
+#### Dataframe Exploration	
+
+-	How many data points are included in the accidents_updated dataframe and what is the percentage of this dataframe in comparison to the initial dataset?
+
+o There were 2,245,420 accidents that occurred during the January 2016 – December 2021 timeframe. Those accidents accounted for 78.91% of the initial dataset.
+
+-	How many data points are included in the PreCOVID_accidents dataframe and what is the percentage of this dataframe in comparison to the initial dataset? 
+
+o	There were 277,041 accidents that occurred during the June 2018 – Ferbruary 2020 timeframe. Those accidents accounted for 9.73% of the initial dataset. 
+
+-	How many data points are included in the COVID_accidents dataframe and what is the percentage of this dataframe in comparison to the initial dataset?
+
+o	There were 1,928,431 accidents that occurred during the March 2020-December 2021 timeframe. Those accidents accounted for 67.77% of the initial dataset.
+
+The resulting percentages (in relation to the initial dataset) for the dataframes is as follows…
+
+![DataFrameRelationship](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated_Images/DataFrame_Relationship.png)
+
+*NOTE-We recognize there is a significant difference between the number of accidents that occurred during the “PreCOVID” timeframe and the “COVID” timeframe by 1,651,390 accidents. There are many factors that could be impacting this difference, however for the purposes of this project, we will not be analyzing those factors*
+
+#### Comparison of Averages	
+
+-	What is the average per dataframe for the following columns: “severity”, “temperature_f”, “visibility_mi”, “wind_speed_mph”, and “precipitation_in”? Are there any significant differences between the averages?
+
+![Average_Comparisons](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated_Images/Averages_Comparison.png)
+
+*ADD TO THIS SECTION LATER*
+
+#### Individual Column Exploration
+
+What trends are there between the three dataframes in relation to: “severity”, “state”, “weather conditions”, and “sunrise_sunset”?
+
+Severity Comparison
 
 We can see there was a slight increase in the severity of accidents that were classified as level 4 during the COVID years as opposed to PreCOVID.
 
-![Severity](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Severity_Counts.png)
+![SeverityTable](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated_Images/Severity_Count_table.png)
 
-We used the following code to group the Severity column into two categories; short_delay and long_delay.
-
-![Severity_Code](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Severity_BinCode.png)
-
-We then ran the comparison on the two categories and the results agree with the overall trend we are seeing, there were more accidents reported in the COVID_accidents
-data than the PreCOVID_accidents data and there are significantly more car accidents classified as "short_delay".
-
-![Severity_Comparison](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Severity_Binned_Comparison.png)
-
-#### Top 5 States Comparison
+Top 5 States Comparison
 
 While California remains the State with the most accidents both PreCOVID and during COVID, we see Florida jump to second highest State with accidents occurring in the COVID-accidents data with Texas, Virgina and Pennsylvania also seeing an increase in accidents which brings them into the top 5 states moving Oregan, Minnesota and Utah out of the top 5 states.
 
-![States1](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Top5_overall_count.png)
-![States2](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Top5_PreCOVID_count.png)
-![States3](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Top5_COVID_count.png)
+![TopStates](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated_Images/Top5_States_table.png)
 
-We decided not to group the States into categories for this portion of the research, however we reconginze more analysis can be run to dive deeper into the State comparison in relation to COVID lockdowns potentially for a future study.
-  - Potential Research Question: What impact did the COVID lockdown/quaratine have on the number and severity of car accidents in each state in the US?
+We decided not to group the States into categories for this portion of the research, however we recognize more analysis can be run to dive deeper into the State comparison in relation to COVID lockdowns potentially for a future study.
+
+  - Potential Research Question: What impact did the COVID lockdown/quarantine have on the number and severity of car accidents in each state in the US?
   
-#### Sunset_Sunrise Comparison
+*MAY ADD REGIONAL DATA*
+
+Sunset_Sunrise Comparison
 
 We can see the trend continue where there are more accidents that occur during the day than at night.
 
-![Sunrise_Sunset](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Sunrise_Sunset-Counts.png)
+![SunriseTable](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated_Images/SunriseSunset_Count_table.png)
 
-Since this column is already catergorized by "night" and "day", we decided not to catergorize the column any further. 
+Since this column is already categorized by "night" and "day", we decided not to categorize the column any further. 
 
-#### Weather Conditions Comparison
+Weather Conditions Comparison
 
-There were 127 different categories of weather condititions included in the original data including categories such as fair, heavy rain, overcast, thunderstorms, etc.
+There were 127 different categories of weather conditions included in the original data including categories such as fair, heavy rain, overcast, thunderstorms, etc. 
+Therefore, we decided to review the top 5 weather conditions much like we did for the state comparison. We can see that both the PreCOVID and COVID dataframes follow the trend of the accidents_updated dataframe with Fair, Cloudly, Mostly Cloudy, and Light Rain being the top 5 weather conditions reported during the occurrence of accidents. 
 
-We first needed to run an array to be able to see all of the categories included. 
+![TopWeather](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated_Images/Top5_Weather_table.png)
 
-![Array](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/WeatherConditions_Array.png)
-
-From there we grouped those categories into two categories; "clear_weather", "bad_weather"
-
-![Weather_Code](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/WeatherConditions_BinCode.png)
-
-We can see an overall trend of more accidents were reported during "clear_weather" than "bad_weather".
-
-![Weather_comparison](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/WeatherConditions_Binned_Comparison.png)
-
-#### Year Comparison
+Year Comparison
 
 Much like the overall trend of accidents occurring, we see an increase in the number of accidents with each year with the most accidents reported in 2021 for all three dataframes. 
 
 ![Years](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Year_Counts.png)
 
-For the comparsion portion of the student we decided not to include the 'Temperature(F)', 'Visibility(mi)', 'Wind_Speed(mph)', 'Precipitation(in)' columns, however, they will be included under as weather variables in the Machine Learning portion of the project.
+*ADD UPDATED IMAGE*
+
 
 ## GitHub Repository
 Justin Kirk is the keeper of the GitHub Repository.
