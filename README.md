@@ -8,16 +8,13 @@ CSVs:
 
 cleaned
  
-- Accidents_updated.csv:          https://accidental-tourist-justinkirk8.s3.amazonaws.com/accidents_updated.csv
-- PreCOVID_accidents.csv:         https://accidental-tourist-justinkirk8.s3.amazonaws.com/PreCOVID_accidents.csv
-- COVID_accidents.csv:            https://accidental-tourist-justinkirk8.s3.amazonaws.com/COVID_accidents.csv
 - Accidents_merged.csv:           https://accidental-tourist-justinkirk8.s3.amazonaws.com/accidents_merged.csv
+- Accidents_sample_merged.csv:    https://accidental-tourist-justinkirk8.s3.amazonaws.com/accidents_sample_merged.csv
 
 joined                            
 
-- PreCOVID_accidents_joined.csv:  https://accidental-tourist-justinkirk8.s3.amazonaws.com/PreCOVID_accidents_joined.csv
-- COVID_accidents_joined.csv:     https://accidental-tourist-justinkirk8.s3.amazonaws.com/COVID_accidents_joined.csv
 - Accidents_joined.csv:           https://accidental-tourist-justinkirk8.s3.amazonaws.com/accidents_joined.csv
+- Accidents_sample_joined.csv:    https://accidental-tourist-justinkirk8.s3.amazonaws.com/accidents_sample_merged.csv
 
 ## Research Question
 - What impact has COVID had on the severity of car accidents in the US?
