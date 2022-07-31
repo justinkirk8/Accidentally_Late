@@ -1,4 +1,4 @@
-# Technology For Accidental Tourist
+# Technology For Accidentally_Late
 
 ## Database Cleaning
 -Jupyter Notbeook
@@ -14,4 +14,7 @@
 ## Visulaization
 -Tableau
 
-### All technologies and platforms will be utilized to analyze the data to determine whether our hypothesis is supported.
+## Presentation
+-Google Slides
+
+### All technologies and platforms will be utilized to analyze the data to determine whether our hypothesis is supported. Everything will be updated to GitHub to be presented in one location.
