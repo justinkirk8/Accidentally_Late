@@ -1,4 +1,4 @@
-# Accidental_Tourist
+# Accidentally_Late
 ## Purpose 
 Traffic accidents was chosen as our team topic. We are curious to see how much effect Covid had on traffic accidents across the country. We selected traffic accidents during the covid time period because a lot of the country was shut down, many people were working from home, and many businesses were shut down or had limited access. So, in theory, the number of driver's on the road should have decreased. We saw data stored at Kaggle.com and realized we had a good source of data to investigate the Covid effect on traffic accidents. The data covers US Accidents from February 2016 through December 2021. This countrywide dataset covers 49 states in the US using multiple API's (Application Programming Interface) which provide data captured by a variety of entities, such as the US and State Departments of Transportation, law enforcement agencies, traffic cameras, and traffic sensors within the road-networks. There are 2.8 million accident records in this dataset. We may even investigate to see if weather had an additional impact on these accidents.
 
@@ -56,11 +56,11 @@ After cleaning the data, we were able to create two seperate dataframes, one for
 
 - For the PreCOVID dataframe, we used the date range of June 01, 2018 - Februray 29, 2020
 
-![PreCOVID_Dataframe](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/images/Database/PreCOVID_data.png)
+![PreCOVID_Dataframe](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Database/PreCOVID_data.png)
 
 - For the COVID dataframe, we used the date range of March 01, 2020 - December 31, 2021
 
-![COVID_Dataframe](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/images/Database/COVID_data.png)
+![COVID_Dataframe](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Database/COVID_data.png)
 
 ![Date_Range](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Database/DateRange.png)
 
@@ -137,7 +137,7 @@ Year Comparison
 
 Much like the overall trend of accidents occurring, we see an increase in the number of accidents with each year with the most accidents reported in 2021 for all three dataframes. 
 
-![Years](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/images/Database/Year_Counts.png)
+![Years](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Database/Year_Counts.png)
 
 *ADD UPDATED IMAGE*
 
@@ -153,13 +153,13 @@ Justin Kirk is the keeper of the GitHub Repository.
 ## Machine Learning Model
 
 ### MLM Preliminary Diagram
-![Accidental_Tourist/Machine_Learning_Model "Machine_Learning_Diagram"](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/images/Machine_Learning/Machine_Learning_Diagram.png)
+![Accidentally_Late/Machine_Learning_Model "Machine_Learning_Diagram"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Machine_Learning/Machine_Learning_Diagram.png)
 
 ### - Takes in Data From the Provisional Database
-See code here, https://github.com/justinkirk8/Accidental_Tourist/blob/main/Machine_Learning_Model/Archive/Week_1_MLM.ipynb
+See code here, https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Archive/Week_1_MLM.ipynb
 
 ### - Outputs Label for Input Data
-![Accidental_Tourist "Week_1_MLM.ipynb"](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/images/Machine_Learning/Selected_Columns_MLM.png)
+![Accidentally_Late "Week_1_MLM.ipynb"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Machine_Learning/Selected_Columns_MLM.png)
 
 
 ## Database Integration
