@@ -56,11 +56,11 @@ After cleaning the data, we were able to create two seperate dataframes, one for
 
 - For the PreCOVID dataframe, we used the date range of June 01, 2018 - Februray 29, 2020
 
-![PreCOVID](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated_Images/PreCOVID_Code.png)
+![PreCOVID](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Database/COVID_Code.png)
 
 - For the COVID dataframe, we used the date range of March 01, 2020 - December 31, 2021
 
-![COVID](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated_Images/COVID_Code.png)
+![COVID](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Database/COVID_Code.png)
 
 
 ![Date_Range](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Database/DateRange.png)
@@ -138,7 +138,7 @@ Year Comparison
 
 Much like the overall trend of accidents occurring, we see an increase in the number of accidents with each year with the most accidents reported in 2021 for all three dataframes. 
 
-![Years](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Year_Comparison.png)
+![Years](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/images/Database/Year_Comparison.png)
 
 
 ## GitHub Repository
