@@ -140,6 +140,25 @@ Much like the overall trend of accidents occurring, we see an increase in the nu
 
 ![Years](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/images/Database/Year_Comparison.png)
 
+## Join in pgAdmin
+
+### Importing tables
+
+- Two tables were created from the CSVs created above:
+ - The accident_merged.csv was used to create a table inteded to be used for data visualization
+ - The accident_sample_merged.csv was used to create a table intended to be used for machine learning
+- The US_State_Region.csv was used to create a table which contains the region and division for each state
+- The Database Diagram below shows the type of data found in each column of the three tables
+
+![DBD](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/sql_join/DBD.png)
+
+### Joining 
+
+- Two tables were created by joining each of the accident tables with the us_state_region table
+- CSV files were created using these two new tables
+- The code below is an example of the join code
+
+![Join_code](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/sql_join/join_example.png)
 
 ## GitHub Repository
 Justin Kirk is the keeper of the GitHub Repository.
@@ -149,6 +168,8 @@ Justin Kirk is the keeper of the GitHub Repository.
  - Switching to a public repo activated the merge request requiring approval. Send a slack message in #github when you post a request.
 ### - Each team member has at least 4 commits for the duration of the first segment
  - Be sure to commit as you go so that we can hit this goal.
+ - While in process, all patch branches will be kept. Once final commit count is made for deliverable 4, all patch branches will be removed.
+ 
 ## Machine Learning Model
 
 ### MLM Preliminary Diagram
