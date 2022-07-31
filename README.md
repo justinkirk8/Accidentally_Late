@@ -166,8 +166,11 @@ See code here, https://github.com/justinkirk8/Accidental_Tourist/blob/main/Machi
 ### - Sample Data that Mimics the expected final database structure or schema
 ### - Draft machine learning model is connected to the provisional database
 ## Dashboard
-### - A bar chart showing the total US volume of accidents for 2016 - 2021
-### - A map showing the US states and their volume of accidents for 2018 -2019
-### - A map showing the US states and their volume of accidents for 2020 - 2021
+### - A line chart showing the total US volume of accidents for 2018 - 2021
+### - A bar chart showing the top 5 states and their volume of accidents for 2018 -2019
+### - A bar chart showing the top 5 states and their volume of accidents PreCOVID
+### - A bar chart showing the top 5 states and their volume of accidents COVID
+### - A bar chart showing the accident volume per the top 5 weather conditions with day or night and PreCovid and COVID.
+### - A map showing the US regions and their volume of accidents for Covid
 https://public.tableau.com/app/profile/kurt.holmberg/viz/Project_test_16587764712720/PreCovidSeverity?publish=yes
 
