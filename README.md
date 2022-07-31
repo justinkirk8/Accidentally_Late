@@ -192,5 +192,5 @@ See code here, https://github.com/justinkirk8/Accidentally_Late/blob/main/Machin
 ### - A bar chart showing the top 5 states and their volume of accidents COVID
 ### - A bar chart showing the accident volume per the top 5 weather conditions with day or night and PreCovid and COVID.
 ### - A map showing the US regions and their volume of accidents for Covid
-https://public.tableau.com/app/profile/kurt.holmberg/viz/Project_test_16587764712720/PreCovidSeverity?publish=yes
+https://public.tableau.com/app/profile/kurt.holmberg/viz/ProjectBook2_16592207802480/Story1?publish=yes
 
