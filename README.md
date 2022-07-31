@@ -39,7 +39,7 @@ The dataset included 47 columns, however, we only included the following columns
 
 ### Data Cleaning Process
 
-In cleaning the data, we following the following steps…
+The following steps were used to clean the dataset.
 
 -	Step 1: Imported the US_Accidents_Dec21_updated.csv file
 -	Step 2: Ran the row_count function to get a count of how many rows (data points) were in the initial dataset, “accidents” The code returned a total number of 2,845,342 accidents reported during the time frame of January 01, 2016 – December 31, 2021 in the US. This also allowed us to review the header for the all the columns in the dataset.
@@ -52,15 +52,15 @@ In cleaning the data, we following the following steps…
 -	Step 9: Renamed the columns names for ease of use in SQL
 -	Step 10: Ran row_count function to make sure no rows were lost in the previous steps
 
-After cleaning the data, we were able to create two seperate dataframes, one for accidents that occured PreCOVID and another for accidents that has occured after COVID was declared a pandemic in the US. Each dataset consisted of 21 months.
+After cleaning the data, we were able to create two seperate dataframes, one for accidents that occured PreCOVID and another for accidents that has occured after COVID was declared a pandemic in the US. Each dataset consisted of a 21 month timeframe.
 
 - For the PreCOVID dataframe, we used the date range of June 01, 2018 - Februray 29, 2020
 
-![PreCOVID_Dataframe](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/PreCOVID_data.png)
+![PreCOVID](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated_Images/PreCOVID_Code.png)
 
 - For the COVID dataframe, we used the date range of March 01, 2020 - December 31, 2021
 
-![COVID_Dataframe](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/COVID_data.png)
+![COVID](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated_Images/COVID_Code.png)
 
 ![Date_Range](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/Updated_Images/DateRange.png)
 
@@ -137,10 +137,7 @@ Year Comparison
 
 Much like the overall trend of accidents occurring, we see an increase in the number of accidents with each year with the most accidents reported in 2021 for all three dataframes. 
 
-![Years](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Year_Counts.png)
-
-*ADD UPDATED IMAGE*
-
+![Years](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/Year_Comparison.png)
 
 ## GitHub Repository
 Justin Kirk is the keeper of the GitHub Repository.
