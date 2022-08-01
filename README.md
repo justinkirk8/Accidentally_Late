@@ -181,6 +181,13 @@ See code here, https://github.com/justinkirk8/Accidentally_Late/blob/main/Machin
 ### - Outputs Label for Input Data
 ![Accidentally_Late "Week_1_MLM.ipynb"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Machine_Learning/Selected_Columns_MLM.png)
 
+### - Split Training & Testing Data
+
+### - Model Choice - Limitations and Benefits including model process/changes
+insert graph and/or bar chart of models performed with scores
+
+### - Trained and ReTraining - parameters
+
 
 ## Database Integration
 ### - Sample Data that Mimics the expected final database structure or schema
