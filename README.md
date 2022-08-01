@@ -193,6 +193,6 @@ See code here, https://github.com/justinkirk8/Accidentally_Late/blob/main/Machin
 ### - A bar chart showing the accident volume per the top 5 weather conditions with day or night and PreCovid and COVID.
 ### - A map showing the US regions and hover over the states and their volume of accidents for all, PreCovid, or COVID will show.  Adjust filter to see one of the three volumes.
 ### - An interactive story was added.
-https://public.tableau.com/app/profile/kurt.holmberg/viz/Project_test_16587764712720/PreCovidSeverity?publish=yes
+https://public.tableau.com/app/profile/kurt.holmberg/viz/ProjectBook2_16592207802480/Story1?publish=yes
 
 
