@@ -183,10 +183,36 @@ See code here, https://github.com/justinkirk8/Accidentally_Late/blob/main/Machin
 
 ### - Split Training & Testing Data
 
-### - Model Choice - Limitations and Benefits including model process/changes
-insert graph and/or bar chart of models performed with scores
+### - Supervised Machine Learning
 
-### - Trained and ReTraining - parameters
+- RESEARCH QUESTION – Does Covid or other weather/environmental factors (variables) such as daylight have an affect on the severity of accidents as measured by short versus long traffic delay? 
+
+Supervised Learning is a Machine Learning approach using labeled datasets designed to train (supervise) algorithms into predicting outcomes accurately. Through the use of labeled inputs and outputs, supervised learning models are designed to maximize overall accuracy and learn over time or iteratively with modified parameters, more data and/or more features (variables).
+
+Imbalanced datasets occur when there is an unequal distribution of classes in the original and training datasets. Majority and minority classes exist resulting in a high accuracy for the majority target class (short delay) and a low accuracy for the minority class (long delay). Data imbalance can lead to inaccurate predictive results as classification errors are more predominant in the minority class, which is the more important predictive class. 
+
+[show imbalanced graph]
+
+Machine learning works best when the sample size between the target class labels (what you are trying to predict) are equal. To compensate for this shortcoming, oversampling of the minority class and/or undersampling of the majority class are techniques used exclusively or in combination to achieve the best accuracy results. 
+
+[show oversampling/undersampling visual]
+
+## Machine Learning Model Conclusion
+>>DISCUSS/INSERT RESULTS HERE
+
+[show score summary table & chart]
+
+The MLM shows the Random Forest Classifier as the better performer when taking into account all scores with particular attention to the F1 score. (citation for F1 score importance). 
+
+The information in this data research study can be used across several industries and organizations including but not limited to: Waze, Lyft, Department of Transportation, map/traffic trip estimators and safety organizations.
+
+## Sources –
+(https://www.ibm.com/cloud/blog/supervised-vs-unsupervised-learning)<br>
+(https://machinelearningmastery.com/imbalanced-classification-with-python/)
+
+
+
+### - Trained and ReTraining - parameters??
 
 
 ## Database Integration
