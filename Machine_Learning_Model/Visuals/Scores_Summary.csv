@@ -3,7 +3,7 @@ LD","Precision
 SD","Recall
 LD","Recall
 SD","F1
-LD ","F2
+LD ","F1
 SD"
 RandomForestClassifier,0.900464,0.55,0.92,0.31,0.97,0.40,0.95
 Naïve Random Oversampling,0.7327128,0.35,0.95,0.60,0.87,0.44,0.90
