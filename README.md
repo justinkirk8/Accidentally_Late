@@ -183,6 +183,8 @@ See code here, https://github.com/justinkirk8/Accidentally_Late/blob/main/Machin
 
 ### - Split Training & Testing Data
 
+- we split the data into training and testing datasets
+
 ### - Supervised Machine Learning
 
 - RESEARCH QUESTION – Does Covid or other weather/environmental factors (variables) such as daylight have an affect on the severity of accidents as measured by short versus long traffic delay? 
