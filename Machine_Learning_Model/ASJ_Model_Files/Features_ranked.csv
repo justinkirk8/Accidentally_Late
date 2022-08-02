@@ -1,0 +1,12 @@
+,Features Ranked from Random Forest Classifier
+Temperature,0.327660825
+Classification,0.185859416
+Wind_Speed,0.178584993
+Visibility,0.092783966
+Region_West,0.069160865
+Precipitaiton,0.049626054
+Region_South,0.041155022
+Sunrise_Sunset,0.0203953
+Region_Midwest,0.018628256
+Region_Northeast,0.008902481
+Weather_Condition,0.007242822
