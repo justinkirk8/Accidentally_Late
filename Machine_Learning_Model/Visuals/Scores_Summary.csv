@@ -3,10 +3,11 @@ LD","Precision
 SD","Recall
 LD","Recall
 SD","F1
-LD ","F2
+LD ","F1
 SD"
 RandomForestClassifier,0.900464,0.55,0.92,0.31,0.97,0.40,0.95
 Naïve Random Oversampling,0.7327128,0.35,0.95,0.60,0.87,0.44,0.90
 SMOTE Oversampling,0.732698,0.35,0.95,0.60,0.87,0.44,0.91
 Support Vector Machine,0,0,0.89,0,1.00,0,0.94
 GradientBoosterClassifer,0.897648,0.61,0.91,0.14,0.99,0.23,0.95
+SMOTEEN Combo Over UnderSampling,0.73055,0.35,0.95,0.59,0.87,0.44,0.91
