@@ -183,38 +183,47 @@ See code here, https://github.com/justinkirk8/Accidentally_Late/blob/main/Machin
 
 ### - Split Training & Testing Data
 
-- we split the data into training and testing datasets
+See code here, []
 
 ### - Supervised Machine Learning
-
-- RESEARCH QUESTION – Does Covid or other weather/environmental factors (variables) such as daylight have an affect on the severity of accidents as measured by short versus long traffic delay? 
 
 Supervised Learning is a Machine Learning approach using labeled datasets designed to train (supervise) algorithms into predicting outcomes accurately. Through the use of labeled inputs and outputs, supervised learning models are designed to maximize overall accuracy and learn over time or iteratively with modified parameters, more data and/or more features (variables).
 
 Imbalanced datasets occur when there is an unequal distribution of classes in the original and training datasets. Majority and minority classes exist resulting in a high accuracy for the majority target class (short delay) and a low accuracy for the minority class (long delay). Data imbalance can lead to inaccurate predictive results as classification errors are more predominant in the minority class, which is the more important predictive class. 
 
-[show imbalanced graph]
+See U.S. Car Accident data on length of traffic delay here, [show imbalanced graph]!!!!
 
 Machine learning works best when the sample size between the target class labels (what you are trying to predict) are equal. To compensate for this shortcoming, oversampling of the minority class and/or undersampling of the majority class are techniques used exclusively or in combination to achieve the best accuracy results. 
 
-[show oversampling/undersampling visual]
+Diagram of model technique[show oversampling/undersampling visual]!!!
 
-## Machine Learning Model Conclusion
->>DISCUSS/INSERT RESULTS HERE
+### - Trained and ReTraining 
+Using our fixed dataset, a closer look using SMOTE Oversampling was used on a subset to include data from just the state of Florida. Florida having warmer weather year round (less temperature variance) than the whole country shows better model performance in predicting "long delays." With "temperature" being ranked as the top feature in the Random Forest Classifier, can explain why the results were better
 
-[show score summary table & chart]
+US versus FL Score Summary, [insert graph here]
+
+### Machine Learning Model Conclusion
+Overall, the models did not perform well with the dataset features in predicting "long delay" traffic. The minority class was not adequately predicted despite the higher accuracy and classification scores. The confusion matrix sheds insight into the inadequacy in regards to predicitng "long delays." 
+
+The overall best performing models looking at all scores were -
+- RandomForestClassifier
+- Naive Random Oversampling
+- SMOTE Oversampling
+
+[show score summary table & chart]!!!!
 
 The MLM shows the Random Forest Classifier as the better performer when taking into account all scores with particular attention to the F1 score. (citation for F1 score importance). 
 
 The information in this data research study can be used across several industries and organizations including but not limited to: Waze, Lyft, Department of Transportation, map/traffic trip estimators and safety organizations.
 
 ## Sources –
-(https://www.ibm.com/cloud/blog/supervised-vs-unsupervised-learning)<br>
-(https://machinelearningmastery.com/imbalanced-classification-with-python/)
+1. (https://www.ibm.com/cloud/blog/supervised-vs-unsupervised-learning)<br>
+2. (https://machinelearningmastery.com/imbalanced-classification-with-python/)<br>
+3. (https://scikit-learn.org)
 
 
 
-### - Trained and ReTraining - parameters??
+
 
 
 ## Database Integration
