@@ -170,20 +170,43 @@ Justin Kirk is the keeper of the GitHub Repository.
  - Be sure to commit as you go so that we can hit this goal.
  - While in process, all patch branches will be kept. Once final commit count is made for deliverable 4, all patch branches will be removed.
  
-## Machine Learning Model
+## Machine Learning Model (MLM)
 
 ### MLM Preliminary Diagram
 ![Accidentally_Late/Machine_Learning_Model "Machine_Learning_Diagram"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Machine_Learning/Machine_Learning_Diagram.png)
 
+### - MLM Data Processing 
+The data went through several phases of processing as discussed with the team -
+- Many of these phases are described in the Data Exploration portion of this document. 
+- It was determined to focus on the weather related and georgraphical region variables as they include a combination of discreet and continuous variables. 
+- The columns included for MLM are - 
+   - "Severity" - the target which was transformed to long and short traffic delay accidents
+   - "Region" - 4 geographic regions within the U.S.; used get_dummies to transform the string data to integers
+   - "Temperature" - measured in Fahrenheit degrees
+   - "Visiblity" - measured in miles
+   - "Wind Speed" - measured in miles per hour
+   - "Preciptiation" - measured in inches
+   - "Weather Condition" - reworked into "clear weather" and "bad weather" using binning
+   See binning description and code here, https://github.com/justinkirk8/Accidentally_Late/blob/main/Database/MLM_database_prep_7.27.2022.ipynb
+   
+   - "Sunrise Sunset" - day versus night converted to 0 and 1
+   - "Classification" - Covid and PreCovid years discussed in the data exploration portion of this document converted to 0 and 1
+   - Data was imbalanced raw (before) and after processing
+   [insert Bar Charts; short delay vs long delay]
+   
 ### - Takes in Data From the Provisional Database
-See code here, https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Archive/Week_1_MLM.ipynb
+Refer to join in PGAdmin section and CSV file created from the join and directly read into software programs used. 
+[insert photo of read CSV]
 
 ### - Outputs Label for Input Data
 ![Accidentally_Late "Week_1_MLM.ipynb"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Machine_Learning/Selected_Columns_MLM.png)
 
 ### - Split Training & Testing Data
+- Target binary class column "severity" was assigned to "y"
+- All other columns were assigned to "X" (variables/features)
+- Train_test_Split was imported from Sklearn.model_selection to split the data into train and test samples
+[insert code example here]
 
-See code here, []
 
 ### - Supervised Machine Learning
 
@@ -196,11 +219,6 @@ See U.S. Car Accident data on length of traffic delay here, [show imbalanced gra
 Machine learning works best when the sample size between the target class labels (what you are trying to predict) are equal. To compensate for this shortcoming, oversampling of the minority class and/or undersampling of the majority class are techniques used exclusively or in combination to achieve the best accuracy results. 
 
 Diagram of model technique[show oversampling/undersampling visual]!!!
-
-### - Trained and ReTraining 
-Using our fixed dataset, a closer look using SMOTE Oversampling was used on a subset to include data from just the state of Florida. Florida having warmer weather year round (less temperature variance) than the whole country shows better model performance in predicting "long delays." With "temperature" being ranked as the top feature in the Random Forest Classifier, can explain why the results were better
-
-US versus FL Score Summary, [insert graph here]
 
 ### Machine Learning Model Conclusion
 Overall, the models did not perform well with the dataset features in predicting "long delay" traffic. The minority class was not adequately predicted despite the higher accuracy and classification scores. The confusion matrix sheds insight into the inadequacy in regards to predicitng "long delays." 
