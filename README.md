@@ -175,7 +175,7 @@ Justin Kirk is the keeper of the GitHub Repository.
 ### MLM Preliminary Diagram
 ![Accidentally_Late/Machine_Learning_Model "Machine_Learning_Diagram"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Machine_Learning/Machine_Learning_Diagram.png)
 
-### - MLM Data Processing 
+### - MLM Data Processing - Feature Selection & Engineering 
 The data went through several phases of processing as discussed with the team -
 - Many of these phases are described in the Data Exploration portion of this document. 
 - It was determined to focus on the weather related and georgraphical region variables as they include a combination of discreet and continuous variables. 
@@ -194,21 +194,13 @@ The data went through several phases of processing as discussed with the team -
    - Data was imbalanced raw (before) and after processing
    [insert Bar Charts; short delay vs long delay]
    
-### - Takes in Data From the Provisional Database
-Refer to join in PGAdmin section and CSV file created from the join and directly read into software programs used. 
-[insert photo of read CSV]
-
-### - Outputs Label for Input Data
-![Accidentally_Late "Week_1_MLM.ipynb"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Machine_Learning/Selected_Columns_MLM.png)
-
 ### - Split Training & Testing Data
 - Target binary class column "severity" was assigned to "y"
 - All other columns were assigned to "X" (variables/features)
 - Train_test_Split was imported from Sklearn.model_selection to split the data into train and test samples
 [insert code example here]
 
-
-### - Supervised Machine Learning
+### - Model Choice - Supervised Machine Learning - Limitations & Benefits
 
 Supervised Learning is a Machine Learning approach using labeled datasets designed to train (supervise) algorithms into predicting outcomes accurately. Through the use of labeled inputs and outputs, supervised learning models are designed to maximize overall accuracy and learn over time or iteratively with modified parameters, more data and/or more features (variables).
 
@@ -220,7 +212,13 @@ Machine learning works best when the sample size between the target class labels
 
 Diagram of model technique[show oversampling/undersampling visual]!!!
 
-### Machine Learning Model Conclusion
+### - Trained and ReTraining 
+Using our fixed dataset, a closer look using SMOTE Oversampling was used on a subset to include data from just the state of Florida. Florida having warmer weather year round (less temperature variance) than the whole country shows better model performance in predicting "long delays." With "temperature" being ranked as the top feature in the Random Forest Classifier, can explain why the results were better
+
+US versus FL Score Summary, [insert graph here]
+
+
+### Machine Learning Model Conclusion - Confusion Matrices & Accuracy Scores
 Overall, the models did not perform well with the dataset features in predicting "long delay" traffic. The minority class was not adequately predicted despite the higher accuracy and classification scores. The confusion matrix sheds insight into the inadequacy in regards to predicitng "long delays." 
 
 The overall best performing models looking at all scores were -
@@ -232,7 +230,7 @@ The overall best performing models looking at all scores were -
 
 The MLM shows the Random Forest Classifier as the better performer when taking into account all scores with particular attention to the F1 score. (citation for F1 score importance). 
 
-The information in this data research study can be used across several industries and organizations including but not limited to: Waze, Lyft, Department of Transportation, map/traffic trip estimators and safety organizations.
+### Statistical Analysis 
 
 ## Sources –
 1. (https://www.ibm.com/cloud/blog/supervised-vs-unsupervised-learning)<br>
