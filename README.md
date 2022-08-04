@@ -1,6 +1,8 @@
 # Accidentally_Late
 ## Purpose 
-Traffic Accidents was chosen as our team topic. We are curious to see the effect Covid had on traffic accidents across the country. We selected traffic accidents during the covid time period because a lot of the country was shut down, many people were working from home, and many businesses were shut down or had limited access. So, in theory, the number of driver's on the road should have decreased. We saw data stored at Kaggle.com and realized we had a good source of data to investigate the Covid effect on traffic accidents. The data covers US Accidents from February 2016 through December 2021. This countrywide dataset covers 49 states in the US using multiple API's (Application Programming Interface) which provide data captured by a variety of entities, such as the US and State Departments of Transportation, law enforcement agencies, traffic cameras, and traffic sensors within the road-networks. There are 2.8 million accident records in this dataset. We may even investigate to see if weather had an additional impact on these accidents.
+Traffic Accidents was chosen as our team topic. We are curious to see the effect Covid had on traffic accidents across the country. We selected traffic accidents during the covid time period because a lot of the country was shut down, many people were working from home, and many businesses were shut down or had limited access. So, in theory, the number of driver's on the road should have decreased. We saw data stored at Kaggle.com and realized we had a good source of data to investigate the Covid effect on traffic accidents. The data covers US Accidents from January 2016 through December 2021. This countrywide dataset covers 49 states in the US using multiple API's (Application Programming Interface) which provide data captured by a variety of entities, such as the US and State Departments of Transportation, law enforcement agencies, traffic cameras, and traffic sensors within the road-networks. 
+
+SHOULD WE DELETE THESE SENTENCES????This dataset provided over 2.8 million accident records. We may even investigate to see if weather had an additional impact on these accidents.
 
 ## In Progress Resources (we may move this section farther down before final submission)
 
@@ -19,15 +21,18 @@ joined
 ## Research Question
 - What impact has COVID had on the severity of car accidents in the US?
 
-## Clean Dataset Description
+## Description of Datasets
 
 We pulled our source data from two different datasets...
 
-The first dataset was pulled from the following link: https://smoosavi.org/datasets/us_accidents
-The second dataset was pulled from ADD REGIONAL DATA INFORMATION HERE
-### Description of the Data
+The first dataset we used was the US-Accidents: A Countrywide Traffic Accident Dataset and was pulled from the following link: https://smoosavi.org/datasets/us_accidents
 
-The dataset included 47 columns, however, we only included the following columns for the purpose of this project...
+The second dataset we used was the US Census Bureau Regions and Divisions by State and was pulled from the following link: 
+https://github.com/cphalpert/census-regions
+
+### Description of the US-Accidents: A Countrywide Traffic Accident Dataset
+
+This dataset included 47 total columns, however, we only included the following columns for the purpose of this project...
 
 - Severity	: Shows the severity of the accident, a number between 1 and 4, where 1 indicates the least impact on traffic (i.e., short delay as a result of the accident) and 4 indicates a significant impact on traffic (i.e., long delay).
 - Start_Time: Shows start time of the accident in local time zone.
@@ -39,9 +44,30 @@ The dataset included 47 columns, however, we only included the following columns
 - Weather_Condition: Shows the weather condition (rain, snow, thunderstorm, fog, etc.)
 - Sunrise_Sunset: Shows the period of day (i.e. day or night) based on sunrise/sunset.
 
+### Description of the US Census Bureau Regions and Divisions by State Dataset
+
+The owner of this dataset, Chris Halpert, was able to pull state data from the Census.gov website using the maps-data pdf. He converted the data in the pdf file into a csv file that we downloaded to use in this study. 
+
+The dataset contained 4 columns; State, State_code, Region and Division. 
+
+The Region column provided a breakdown of the US States into 4 different regions...
+- Midwest
+- Northeast
+- South
+- West
+
+The Division column provided a breakdown of the US States into 7 different divisions...
+- East North Central
+- Middle Alantic
+- Mountain
+- New England
+- Pacific
+- South Atlantic
+- West North Central
+
 ### Data Cleaning Process
 
-The following steps were used to clean the dataset.
+The following steps were used to clean the US-Accidents: A Countrywide Traffic Accident Dataset.
 
 -	Step 1: Imported the US_Accidents_Dec21_updated.csv file
 -	Step 2: Ran the row_count function to get a count of how many rows (data points) were in the initial dataset, “accidents” The code returned a total number of 2,845,342 accidents reported during the time frame of January 01, 2016 – December 31, 2021 in the US. This also allowed us to review the header for the all the columns in the dataset.
@@ -54,7 +80,11 @@ The following steps were used to clean the dataset.
 -	Step 9: Renamed the columns names for ease of use in SQL
 -	Step 10: Ran row_count function to make sure no rows were lost in the previous steps
 
-After cleaning the data, we were able to create two seperate dataframes, one for accidents that occured PreCOVID and another for accidents that has occured after COVID was declared a pandemic in the US. Each dataset consisted of a 21 month timeframe.
+For the US Census Bureau Regions and Divisions by State dataset, the csv provided was already in a cleaned format so no additioanl steps needed to be taken to clean it any further. 
+
+After cleaning the data, we were able to use the accidents_updated dataframe to create two seperate dataframes, one for accidents that occured before COVID was declared a pandemic in the US (PreCOVID_accidents) and another for accidents that has occured after COVID was declared a pandemic in the US (COVID_accidents). 
+
+We reviewed the months the data provided for accidents since COVID and there were a total of 21 months of data provided. To remove unintentional bias from the study, we decided to only look at 21 months prior to COVID being declared a pandemic. Therefore, each dataset consisted of a 21 month timeframe.
 
 - For the PreCOVID dataframe, we used the date range of June 01, 2018 - Februray 29, 2020
 
@@ -64,14 +94,17 @@ After cleaning the data, we were able to create two seperate dataframes, one for
 
 ![COVID](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Database/COVID_Code.png)
 
+We continued to use the initial cleaned dataframe (accidents_updated) so that we could provide an additional layer of analysis by using that dataframe to give us an snapshot into the overall trends of the accidents that occured so that we could have an overall trend to compare the PreCOVID and COVID dataframes against. 
 
 ![Date_Range](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Database/DateRange.png)
 
 ### Data Exploration 
 
+The following organizational structure was used to guide the exploration of the data so that we could gather an understanding of the data before we began the data analysis phase of the project.
+
 ![DataExploration](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Database/Data_Exploration.png)
 
-#### Dataframe Exploration	
+#### Individual Dataframe Exploration	
 
 -	How many data points are included in the accidents_updated dataframe and what is the percentage of this dataframe in comparison to the initial dataset?
 
@@ -85,7 +118,7 @@ o	There were 277,041 accidents that occurred during the June 2018 – Ferbruary 
 
 o	There were 1,928,431 accidents that occurred during the March 2020-December 2021 timeframe. Those accidents accounted for 67.77% of the initial dataset.
 
-The resulting percentages (in relation to the initial dataset) for the dataframes is as follows…
+The resulting percentages (in relation to the source data) for the dataframes is as follows…
 
 ![DataFrameRelationship](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Database/DataFrame_Relationship.png)
 
