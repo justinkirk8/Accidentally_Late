@@ -21,8 +21,10 @@ joined
 
 ## Clean Dataset Description
 
-The dataset was pulled from the following link: https://smoosavi.org/datasets/us_accidents
+We pulled our source data from two different datasets...
 
+The first dataset was pulled from the following link: https://smoosavi.org/datasets/us_accidents
+The second dataset was pulled from ADD REGIONAL DATA INFORMATION HERE
 ### Description of the Data
 
 The dataset included 47 columns, however, we only included the following columns for the purpose of this project...
@@ -56,7 +58,7 @@ After cleaning the data, we were able to create two seperate dataframes, one for
 
 - For the PreCOVID dataframe, we used the date range of June 01, 2018 - Februray 29, 2020
 
-![PreCOVID](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Database/COVID_Code.png)
+![PreCOVID](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Database/PreCOVID_Code.png)
 
 - For the COVID dataframe, we used the date range of March 01, 2020 - December 31, 2021
 
