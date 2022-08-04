@@ -1,0 +1,9 @@
+﻿,Accuracy,"Precision
+LD","Precision
+SD","Recall
+LD","Recall
+SD","F1
+LD ","F1
+SD"
+RandomForestClassifier,0.900464,0.55,0.92,0.31,0.97,0.4,0.95
+RandomForestClassifier - ONLY FLORIDA,0.92107,0.56,0.95,0.47,0.96,0.51,0.96
