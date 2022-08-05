@@ -207,6 +207,9 @@ Justin Kirk is the keeper of the GitHub Repository.
  
 ## Machine Learning Model (MLM)
 
+### Supervised Learning Diagram
+![Accidentally_Late/Machine_Learning_Model/Visuals "Supervised_Learning"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/Supervised_Learning.png)
+
 ### MLM Preliminary Diagram
 ![Accidentally_Late/Machine_Learning_Model "Machine_Learning_Diagram"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Machine_Learning/Machine_Learning_Diagram.png)
 
@@ -261,11 +264,34 @@ The overall best performing models looking at all scores were -
 - Naive Random Oversampling
 - SMOTE Oversampling
 
-[show score summary table & chart]!!!!
+MODEL SCORE SUMMARY -
 
-The MLM shows the Random Forest Classifier as the better performer when taking into account all scores with particular attention to the F1 score. (citation for F1 score importance). 
+Random Forest Classifer
+![Accidentally_Late/Machine_Learning_Model/Visuals "CM_RFC"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/CM_RFC.png)
+
+Naive Random Oversampling
+![Accidentally_Late/Machine_Learning_Model/Visuals "CM_Naive_RO"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/CM_Naive_RO.png)
+
+SMOTE Oversampling
+![Accidentally_Late/Machine_Learning_Model/Visuals "CM_Smote"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/CM_Smote.png)
+
+SMOTEEN
+![Accidentally_Late/Machine_Learning_Model/Visuals "CM_Smoteen"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/CM_Smoteen.png) 
+
+SVM
+![Accidentally_Late/Machine_Learning_Model/Visuals "CM_SVM"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/CM_SVM.png) 
+
+Gradient Booster Classifier
+![Accidentally_Late/Machine_Learning_Model/Visuals "CM_GradientBC"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/CM_GradientBC.png)
+
+SCORE SUMMARY BAR CHART
+![Accidentally_Late/Machine_Learning_Model/Visuals "Score_Summary_Bar_Chart"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/Score_Summary_Bar_Chart.png)
+
+The MLM shows the Random Forest Classifier as the better performer when taking into account all scores with particular attention to the F1 score. 
 
 ### Statistical Analysis 
+The Random Forest Classifier has a rank features function. Temperature was the top feature.
+![Accidentally_Late/Machine_Learning_Model/Visuals "Ranked_Features"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/Ranked_Features.png)
 
 ## Sources –
 1. (https://www.ibm.com/cloud/blog/supervised-vs-unsupervised-learning)<br>
