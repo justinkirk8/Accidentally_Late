@@ -236,7 +236,8 @@ The data went through several phases of processing as discussed with the team -
 - Target binary class column "severity" was assigned to "y"
 - All other columns were assigned to "X" (variables/features)
 - Train_test_Split was imported from Sklearn.model_selection to split the data into train and test samples
-[insert code example here]
+![Accidentally_Late/Machine_Learning_Model/Visuals "Split_Data_Training_Testing"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/Split_Data_Training_Testing.png)
+
 
 ### - Model Choice - Supervised Machine Learning - Limitations & Benefits
 
@@ -244,11 +245,13 @@ Supervised Learning is a Machine Learning approach using labeled datasets design
 
 Imbalanced datasets occur when there is an unequal distribution of classes in the original and training datasets. Majority and minority classes exist resulting in a high accuracy for the majority target class (short delay) and a low accuracy for the minority class (long delay). Data imbalance can lead to inaccurate predictive results as classification errors are more predominant in the minority class, which is the more important predictive class. 
 
-See U.S. Car Accident data on length of traffic delay here, [show imbalanced graph]!!!!
+![Accidentally_Late/Machine_Learning_Model/Visuals "Imbalanced_Data_Chart"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/Imbalanced_Data_Chart.png)
+
 
 Machine learning works best when the sample size between the target class labels (what you are trying to predict) are equal. To compensate for this shortcoming, oversampling of the minority class and/or undersampling of the majority class are techniques used exclusively or in combination to achieve the best accuracy results. 
 
-Diagram of model technique[show oversampling/undersampling visual]!!!
+![Accidentally_Late/Machine_Learning_Model/Visuals "Under_Oversampling_Diagram"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/Under_Oversampling_Diagram.png)
+
 
 ### - Trained and ReTraining 
 Using our fixed dataset, a closer look using SMOTE Oversampling was used on a subset to include data from just the state of Florida. Florida having warmer weather year round (less temperature variance) than the whole country shows better model performance in predicting "long delays." With "temperature" being ranked as the top feature in the Random Forest Classifier, can explain why the results were better
@@ -284,10 +287,10 @@ SVM
 Gradient Booster Classifier
 ![Accidentally_Late/Machine_Learning_Model/Visuals "CM_GradientBC"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/CM_GradientBC.png)
 
-SCORE SUMMARY BAR CHART
-![Accidentally_Late/Machine_Learning_Model/Visuals "Score_Summary_Bar_Chart"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/Score_Summary_Bar_Chart.png)
+SCORES SUMMARY BAR CHART
+![Accidentally_Late/Machine_Learning_Model/Visuals "Scores_Summary_barchart"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/Scores_Summary_barchart.png)
 
-The MLM shows the Random Forest Classifier as the better performer when taking into account all scores with particular attention to the F1 score. 
+The MLM shows the Random Forest Classifier as the better performer when taking into account all scores with particular attention to the F1 score. Although the dataset doesn't adequately predict severity, although the volume of accidents increased during Covid, there is no indication that these factors are usely in predicting "long delays."
 
 ### Statistical Analysis 
 The Random Forest Classifier has a rank features function. Temperature was the top feature.
