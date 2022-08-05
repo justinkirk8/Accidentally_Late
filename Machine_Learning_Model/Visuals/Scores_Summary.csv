@@ -1,14 +1,16 @@
-﻿,Accuracy,"Precision
+﻿"Machine Learning Models Scores 
+Summary",,,,,,,
+,,,,,,,
+,Accuracy,"Precision
 LD","Precision
 SD","Recall
 LD","Recall
 SD","F1
-LD ","F1
+LD ","F2
 SD"
-RandomForestClassifier,0.900464,0.55,0.92,0.31,0.97,0.4,0.95
-Naïve Random Oversampling,0.7327128,0.35,0.95,0.6,0.87,0.44,0.9
-SMOTE Oversampling,0.732698,0.35,0.95,0.6,0.87,0.44,0.91
-Support Vector Machine,0,0,0.89,0,1,0,0.94
+RandomForestClassifier,0.900464,0.55,0.92,0.31,0.97,0.40,0.95
+Naïve Random Oversampling,0.7327128,0.35,0.95,0.60,0.87,0.44,0.90
+SMOTE Oversampling,0.732698,0.35,0.95,0.60,0.87,0.44,0.91
+SMOTEEN Combo Over Undersampling,0.73055,0.35,0.95,0.59,0.87,0.44,0.91
+Support Vector Machine,0.899144,0.64,0.91,0.14,0.99,0.22,0.95
 GradientBoosterClassifer,0.897648,0.61,0.91,0.14,0.99,0.23,0.95
-SMOTEEN Combo Over UnderSampling,0.73055,0.35,0.95,0.59,0.87,0.44,0.91
-RandomForestClassifier - ONLY FLORIDA,0.92107,0.56,0.95,0.47,0.96,0.51,0.96
