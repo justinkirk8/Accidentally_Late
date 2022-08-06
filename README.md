@@ -315,12 +315,29 @@ The Random Forest Classifier has a rank features function. Temperature was the t
 3. (https://scikit-learn.org)
 
 ## Dashboard
-### - A line chart showing the total US volume of accidents for 2018 - 2021
-### - A bar chart showing the top 5 states and their volume of accidents for 2018 -2019
-### - A bar chart showing the top 5 states and their volume of accidents PreCOVID
-### - A bar chart showing the top 5 states and their volume of accidents COVID
-### - A bar chart showing the accident volume per the top 5 weather conditions with day or night and PreCovid and COVID.
-### - A map showing the US regions and hover over the states and their volume of accidents for all, PreCovid, or COVID will show.  Adjust filter to see one of the three volumes.
-### - An interactive story was added.
+The Dashboard and Story were created using Tableau.  After each of the processes,  Tableau was used to view the data.  There were times the charts showed things that were not  easily seen looking at the numbers.  These things helped guide the analysis.
+
+The first Dashboard:
+A line chart showing the total US volume of accidents for 2018 through 2021 showed that the number of accidents increased after COVID started.  The data was broken up between preCOVID and COVID time frames.  The line chart can switch and show the full time frame, preCOVID time and COVID time.
+
+A map with the regions of the US and the individual states was created.  The states when highlighted shows the total number of accidents during the time period select.
+
+The second Dashboard:
+Three bar charts were created to show the top five states that had the largest volume of accidents during full time frame, preCOVID, and COVID.
+
+The third Dashboard:
+This is not a Dashboard but just a page of the book showing accident volumes during preCOVID and COVID.  Not only does this bar chart show the top five weather conditions but also has them broken apart by day or night.
+
+The fourth Dashboard:
+There are two bar charts in this dashboard.  One shows the top five features from Random Forest Classifier versus their ranking.
+
+The second bar chart shows the machine learning models score summary where each model is plotted against its rating value.
+
+
+The Story:
+A story was created using each of these Dashboards to tell the story of US Accident Volumes during PreCOVID and COVID time frames.
+![image](https://user-images.githubusercontent.com/98991575/183264485-69651cea-8d30-4fca-9239-de53e94ee8ab.png)
+
+
 https://public.tableau.com/app/profile/kurt.holmberg/viz/ProjectBook2_16592207802480/Story1?publish=yes
 
