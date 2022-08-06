@@ -314,14 +314,6 @@ The Random Forest Classifier has a rank features function. Temperature was the t
 2. (https://machinelearningmastery.com/imbalanced-classification-with-python/)<br>
 3. (https://scikit-learn.org)
 
-
-
-
-
-
-## Database Integration
-### - Sample Data that Mimics the expected final database structure or schema
-### - Draft machine learning model is connected to the provisional database
 ## Dashboard
 ### - A line chart showing the total US volume of accidents for 2018 - 2021
 ### - A bar chart showing the top 5 states and their volume of accidents for 2018 -2019
