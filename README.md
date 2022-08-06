@@ -94,7 +94,7 @@ We reviewed the months the data provided for accidents since COVID and there wer
 
 ![COVID](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Database/COVID_Code.png)
 
-We continued to use the initial cleaned dataframe (accidents_updated) so that we could provide an additional layer of analysis by using that dataframe to give us an snapshot into the overall trends of the accidents that occured so that we could have an overall trend to compare the PreCOVID and COVID dataframes against. 
+We continued to use the initial cleaned dataframe (accidents_updated) throughout the project so that we could provide an additional layer of analysis by using that dataframe to give us an snapshot into the overall trends of the accidents that occured so that we could have an overall trend to compare the PreCOVID and COVID dataframes against. 
 
 ![Date_Range](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Database/DateRange.png)
 
@@ -106,43 +106,60 @@ The following organizational structure was used to guide the exploration of the 
 
 #### Individual Dataframe Exploration	
 
+Before moving into the data analysis portion of the project, we first had to understand the data. To do so we first looked at each individual dataset to determine the values we would be using and what percentage each dataset represented from the source data. This method of breaking down the data was used due to there being over 2.8 million datapoints in the source data and in doing so it provided a foundational layer of information to guide us through what elements of the data we should use as we moved into the analysis phase of the project. 
+
 -	How many data points are included in the accidents_updated dataframe and what is the percentage of this dataframe in comparison to the initial dataset?
 
-o There were 2,245,420 accidents that occurred during the January 2016 – December 2021 timeframe. Those accidents accounted for 78.91% of the initial dataset.
+o There were 2,245,420 accidents in this dataframe. Those accidents accounted for 78.91% of the initial accidents dataset.
 
 -	How many data points are included in the PreCOVID_accidents dataframe and what is the percentage of this dataframe in comparison to the initial dataset? 
 
-o	There were 277,041 accidents that occurred during the June 2018 – Ferbruary 2020 timeframe. Those accidents accounted for 9.73% of the initial dataset. 
+o	There were 277,041 accidents in this dataframe. Those accidents accounted for 9.73% of the initial accidents dataset. 
 
 -	How many data points are included in the COVID_accidents dataframe and what is the percentage of this dataframe in comparison to the initial dataset?
 
-o	There were 1,928,431 accidents that occurred during the March 2020-December 2021 timeframe. Those accidents accounted for 67.77% of the initial dataset.
+o	There were 1,928,431 accidents in this dataframe. Those accidents accounted for 67.77% of the initial accidents dataset.
 
-The resulting percentages (in relation to the source data) for the dataframes is as follows…
+The resulting percentages (in relation to the initial accidents data) for the dataframes is as follows…
 
 ![DataFrameRelationship](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Database/DataFrame_Relationship.png)
 
-*NOTE-We recognize there is a significant difference between the number of accidents that occurred during the “PreCOVID” timeframe and the “COVID” timeframe by 1,651,390 accidents. There are many factors that could be impacting this difference, however for the purposes of this project, we will not be analyzing those factors*
+*NOTE-We recognize there is a significant difference between the number of accidents that occurred during the “PreCOVID” timeframe and the “COVID” timeframe by 1,651,390 accidents. There are many factors that could be impacting this difference, however for the purposes of this project, we will not be analyzing those factors. Researching the factors that are impacting that difference is a topic that can be explored further in future studies.*
 
 #### Comparison of Averages	
 
--	What is the average per dataframe for the following columns: “severity”, “temperature_f”, “visibility_mi”, “wind_speed_mph”, and “precipitation_in”? Are there any significant differences between the averages?
+-	What is the average per dataframe for the following columns: “severity”, “temperature_f”, “visibility_mi”, “wind_speed_mph”, and “precipitation_in”? Are there any differences between the averages?
+
+The overall research question this project attempts to answer is if COVID had an impact on the severity of car accidents in the US. The "temperature_f”, “visibility_mi”, “wind_speed”, and “precipitation_in” columns all provided mathematical data. To better understand how these factors were represented in each data frame we ran the mean() function to review the averages of each column.
 
 ![Average_Comparisons](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Database/Averages_Comparison.png)
 
-*ADD TO THIS SECTION LATER*
+The results show the averages for both the PreCOVID accidents and the COVID accidents are comparable to the overall trend of accidents in the US.
 
-#### Individual Column Exploration
+In relation to the average severity recorded in the overall trend of accidents during the 2016-2020 timeframe reading at 2.08. Accidents that occurred during the PreCOVID timeframe were higher than the overall trend showing the severity at 2.24. Accidents that occurred during the COVID timeframe lower than the overall trend showing the severity at 2.08. 
 
-What trends are there between the three dataframes in relation to: “severity”, “state”, “weather conditions”, and “sunrise_sunset”?
+In relation to the temperature recorded at the time of the accidents, the average overall temperature at the time of the accidents was 61.84 F. The average temperature during the PreCOVID timeframe was 58.70 F which is lower than the overall trend. The average temperature during the COVID timeframe was 62.46 F which is higher than the overall trend.
 
-Severity Comparison
+In relation to the visibility recorded at the time of the accidents, the average overall visibility at the time of the accidents was 9.01 miles. The average visibility during the PreCOVID timeframe was 8.87 miles which is lower than the overall trend. The average visibility during the COVID timeframe was 9.08 miles which is higher than the overall trend.
+
+In relation to the wind speed recorded at the time of the accidents, the average overall wind speed at the time of the accidents was 7.18 miles per hour. The average wind speed during the PreCOVID timeframe was 6.97 miles per hour which is lower than the overall trend. The average wind speed during the COVID timeframe was 7.16 miles which is also lower than the overall trend.
+
+In relation to the precipitation recorded at the time of the accidents, the average overall precipitation at the time of the accidents was .006 inches. The average precipitation during the PreCOVID timeframe was the same as the overall trend. The average precipitation during the COVID timeframe was .005 inches lower than the overall trend.
+
+
+#### Additional Column Exploration
+
+What trends are present in relation to the remaining columns: “severity”, “state”, “weather conditions”, “sunrise_sunset”, and "year"?
+
+After exploring the mathematical columns, we ran the value_count() function on the remaining columns to better understand the trends in relation to the state the accidents occured in, the weather condition at the time of the accident, and in the time of day (day or night).
+
+*Severity*
 
 We can see there was a slight increase in the severity of accidents that were classified as level 4 during the COVID years as opposed to PreCOVID.
 
 ![SeverityTable](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Database/Severity_Count_table.png)
 
-Top 5 States Comparison
+*State*
 
 While California remains the State with the most accidents both PreCOVID and during COVID, we see Florida jump to second highest State with accidents occurring in the COVID-accidents data with Texas, Virgina and Pennsylvania also seeing an increase in accidents which brings them into the top 5 states moving Oregan, Minnesota and Utah out of the top 5 states.
 
@@ -151,10 +168,15 @@ While California remains the State with the most accidents both PreCOVID and dur
 We decided not to group the States into categories for this portion of the research, however we recognize more analysis can be run to dive deeper into the State comparison in relation to COVID lockdowns potentially for a future study.
 
   - Potential Research Question: What impact did the COVID lockdown/quarantine have on the number and severity of car accidents in each state in the US?
-  
-*MAY ADD REGIONAL DATA*
 
-Sunset_Sunrise Comparison
+*Weather_Conditions*
+
+There were 127 different categories of weather conditions included in the original data including categories such as fair, heavy rain, overcast, thunderstorms, etc. 
+Therefore, we decided to review the top 5 weather conditions much like we did for the state comparison. We can see that both the PreCOVID and COVID dataframes follow the trend of the accidents_updated dataframe with Fair, Cloudly, Mostly Cloudy, and Light Rain being the top 5 weather conditions reported during the occurrence of accidents. 
+
+![TopWeather](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Database/Top5_Weather_table.png)
+
+*Sunset_Sunrise*
 
 We can see the trend continue where there are more accidents that occur during the day than at night.
 
@@ -162,16 +184,9 @@ We can see the trend continue where there are more accidents that occur during t
 
 Since this column is already categorized by "night" and "day", we decided not to categorize the column any further. 
 
-Weather Conditions Comparison
+*Year*
 
-There were 127 different categories of weather conditions included in the original data including categories such as fair, heavy rain, overcast, thunderstorms, etc. 
-Therefore, we decided to review the top 5 weather conditions much like we did for the state comparison. We can see that both the PreCOVID and COVID dataframes follow the trend of the accidents_updated dataframe with Fair, Cloudly, Mostly Cloudy, and Light Rain being the top 5 weather conditions reported during the occurrence of accidents. 
-
-![TopWeather](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Database/Top5_Weather_table.png)
-
-Year Comparison
-
-Much like the overall trend of accidents occurring, we see an increase in the number of accidents with each year with the most accidents reported in 2021 for all three dataframes. 
+Much like the overall trend of accidents occurring in the US, we see an increase in the number of accidents with each year with the most accidents reported in 2021 for all three dataframes. 
 
 ![Years](https://github.com/justinkirk8/Accidental_Tourist/blob/main/Resources/images/Database/Year_Comparison.png)
 
