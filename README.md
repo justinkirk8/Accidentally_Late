@@ -230,24 +230,26 @@ Justin Kirk is the keeper of the GitHub Repository.
 The data went through several phases of processing as discussed with the team -
 - Many of these phases are described in the Data Exploration portion of this document. 
 - It was determined to focus on the weather related and georgraphical region variables as they include a combination of discreet and continuous variables. 
-- The columns included for MLM are - 
-   - "Severity" - the target which was transformed to long and short traffic delay accidents
-   - "Region" - 4 geographic regions within the U.S.; used get_dummies to transform the string data to integers
-   - "Temperature" - measured in Fahrenheit degrees
-   - "Visiblity" - measured in miles
-   - "Wind Speed" - measured in miles per hour
-   - "Preciptiation" - measured in inches
-   - "Weather Condition" - reworked into "clear weather" and "bad weather" using binning
+- The columns included and engineered for MLM are - 
+   - "Severity" - the target which was transformed to a binary classification of long and short traffic delay accidents
+   - "Region" - discreet variable; 4 geographic regions within the U.S.; used get_dummies to transform the string data to integers
+   - "Temperature" - continuous variable; measured in Fahrenheit degrees
+   - "Visiblity" - continuous variable; measured in miles
+   - "Wind Speed" - continuous variable; measured in miles per hour
+   - "Preciptiation" - continuous variable; measured in inches
+   - "Weather Condition" - transformed to a binary discreet variable; reworked into "clear weather" and "bad weather" using binning
    See binning description and code here, https://github.com/justinkirk8/Accidentally_Late/blob/main/Database/MLM_database_prep_7.27.2022.ipynb
-   
-   - "Sunrise Sunset" - day versus night converted to 0 and 1
-   - "Classification" - Covid and PreCovid years discussed in the data exploration portion of this document converted to 0 and 1
-   - Data was imbalanced raw (before) and after processing
-   [insert Bar Charts; short delay vs long delay]
+   - "Sunrise Sunset" - transformed to a binary discreet variable; day versus night converted to 0 and 1
+   - "Classification" - transformed to a binary discreet variable; Covid and PreCovid years discussed in the data exploration portion of this document        converted to 0 and 1; the dataset was resampled to 250,000 instances each for a total of 500,000 accidents. 
+- Data was imbalanced raw (before) and after processing and resampling: 
+![Accidentally_Late/Machine_Learning_Model/Visuals "<graph showing imbalance>"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/<insert>.png)
+
+![Accidentally_Late/Machine_Learning_Model/Visuals "<graph showing imbalance>"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/<insert>.png)
    
 ### - Split Training & Testing Data
 - Target binary class column "severity" was assigned to "y"
 - All other columns were assigned to "X" (variables/features)
+- Recommended training and testing sets are between 70-80%, and 20-30%, respectively
 - Train_test_Split was imported from Sklearn.model_selection to split the data into train and test samples
 ![Accidentally_Late/Machine_Learning_Model/Visuals "Split_Data_Training_Testing"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/Split_Data_Training_Testing.png)
 
@@ -267,13 +269,15 @@ Machine learning works best when the sample size between the target class labels
 
 
 ### - Trained and ReTraining 
-Using our fixed dataset, a closer look using SMOTE Oversampling was used on a subset to include data from just the state of Florida. Florida having warmer weather year round (less temperature variance) than the whole country shows better model performance in predicting "long delays." With "temperature" being ranked as the top feature in the Random Forest Classifier, can explain why the results were better
+Using the top model performer, Random Forest Classifier a F1 comparison score analysis was performed on three data subsets - 
+1) the state of Florida
+2) Covid time - 21 months 
+3) PreCovid time - 21 months 
 
-US versus FL Score Summary, [insert graph here]
-
+![Accidentally_Late/Machine_Learning_Model/Visuals "RFC_SubsetF1_summary.png"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/RFC_SubsetF1_summary.png)
 
 ### Machine Learning Model Conclusion - Confusion Matrices & Accuracy Scores
-Overall, the models did not perform well with the dataset features in predicting "long delay" traffic. The minority class was not adequately predicted despite the higher accuracy and classification scores. The confusion matrix sheds insight into the inadequacy in regards to predicitng "long delays." 
+Overall, the models did not perform well with the dataset features in predicting "long delay" traffic. The minority class was not adequately predicted despite the higher accuracy and classification scores in some models. The confusion matrix sheds insight into the inadequacy in regards to predicitng "long delays." Particular attention is focused on the F1 score which is the harmonic mean between precision and recall and is designed to work well in measuring the model performance on imbalanced data. In short, the F1 score sums up predictive performance. 
 
 The overall best performing models looking at all scores were -
 - RandomForestClassifier
@@ -291,10 +295,10 @@ Naive Random Oversampling
 SMOTE Oversampling
 ![Accidentally_Late/Machine_Learning_Model/Visuals "CM_Smote"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/CM_Smote.png)
 
-SMOTEEN
+SMOTE-ENN
 ![Accidentally_Late/Machine_Learning_Model/Visuals "CM_Smoteen"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/CM_Smoteen.png) 
 
-SVM
+SVM (Support Vector Machine)
 ![Accidentally_Late/Machine_Learning_Model/Visuals "CM_SVM"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/CM_SVM.png) 
 
 Gradient Booster Classifier
@@ -303,11 +307,22 @@ Gradient Booster Classifier
 SCORES SUMMARY BAR CHART
 ![Accidentally_Late/Machine_Learning_Model/Visuals "Scores_Summary_barchart"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/Scores_Summary_barchart.png)
 
-The MLM shows the Random Forest Classifier as the better performer when taking into account all scores with particular attention to the F1 score. Although the dataset doesn't adequately predict severity, although the volume of accidents increased during Covid, there is no indication that these factors are usely in predicting "long delays."
+The MLM shows the Random Forest Classifier as the better performer when taking into account all scores with particular attention to the F1 score. Although the dataset doesn't adequately predict severity, although the volume of accidents increased during Covid, there is no indication that these factors are useful in predicting "long delays" or severity. 
+
+See code here for Random Forest Classifier, <insert link>
+See code here for Naive Random Oversampling, <insert link>
+See code here for SMOTE Oversampling, <insert link>
+See code here for SMOTE-ENN, <insert link>
+See code here for SVM, <insert link>
+See code here for Gradient Booster Classifier, <insert link>
 
 ### Statistical Analysis 
 The Random Forest Classifier has a rank features function. Temperature was the top feature.
 ![Accidentally_Late/Machine_Learning_Model/Visuals "Ranked_Features"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/Ranked_Features.png)
+
+The top ranked features for the data subsets: Florida, COVID time and PreCovid time all rank temperature high.
+![Accidentally_Late/Machine_Learning_Model/Visuals "Top_Features_Comparison_Subsets.png"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/Top_Features_Comparison_Subsets.png)
+
 
 ## Sources –
 1. (https://www.ibm.com/cloud/blog/supervised-vs-unsupervised-learning)<br>
