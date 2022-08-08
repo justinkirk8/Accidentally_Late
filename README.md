@@ -359,7 +359,7 @@ The second bar chart shows the machine learning models score summary where each 
 
 The Story:
 A story was created using each of these Dashboards to tell the story of US Accident Volumes during PreCOVID and COVID time frames.
-![image](https://user-images.githubusercontent.com/98991575/183264485-69651cea-8d30-4fca-9239-de53e94ee8ab.png)
+
 
 
 https://public.tableau.com/app/profile/kurt.holmberg/viz/ProjectBook2_16592207802480/Story1?publish=yes
