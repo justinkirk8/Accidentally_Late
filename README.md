@@ -267,7 +267,7 @@ Supervised Learning models are good for classification problems and allow data c
 
 ### - Trained and ReTraining 
 Using the top model performer, Random Forest Classifier a F1 comparison score analysis was performed on three data subsets - 
-1) the state of Florida
+1) the state of Florida with both Covid and PreCovid data
 2) Covid time - 21 months 
 3) PreCovid time - 21 months 
 
