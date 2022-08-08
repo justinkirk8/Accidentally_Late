@@ -242,9 +242,6 @@ The data went through several phases of processing as discussed with the team -
    - "Sunrise Sunset" - transformed to a binary discreet variable; day versus night converted to 0 and 1
    - "Classification" - transformed to a binary discreet variable; Covid and PreCovid years discussed in the data exploration portion of this document        converted to 0 and 1; the dataset was resampled to 250,000 instances each for a total of 500,000 accidents. 
 - Data was imbalanced raw (before) and after processing and resampling: 
-![Accidentally_Late/Machine_Learning_Model/Visuals "<graph showing imbalance>"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/<insert>.png)
-
-![Accidentally_Late/Machine_Learning_Model/Visuals "<graph showing imbalance>"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/<insert>.png)
    
 ### - Split Training & Testing Data
 - Target binary class column "severity" was assigned to "y"
@@ -262,11 +259,11 @@ Imbalanced datasets occur when there is an unequal distribution of classes in th
 
 ![Accidentally_Late/Machine_Learning_Model/Visuals "Imbalanced_Data_Chart"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/Imbalanced_Data_Chart.png)
 
-
-Machine learning works best when the sample size between the target class labels (what you are trying to predict) are equal. To compensate for this shortcoming, oversampling of the minority class and/or undersampling of the majority class are techniques used exclusively or in combination to achieve the best accuracy results. 
+Supervised Learning models work best when the sample size between the target class labels (what you are trying to predict) are equal. To compensate for this shortcoming, oversampling of the minority class and/or undersampling of the majority class are techniques used exclusively or in combination to achieve the best accuracy results. 
 
 ![Accidentally_Late/Machine_Learning_Model/Visuals "Under_Oversampling_Diagram"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/Under_Oversampling_Diagram.png)
 
+Supervised Learning models are good for classification problems and allow data collection from a previous experience, and are able to produce a data output. Limitations include always in need of updates and can easily be overfitted. In addition, supervised learning models have an inability to learn by itself and cannot give unknown information from the training data. 
 
 ### - Trained and ReTraining 
 Using the top model performer, Random Forest Classifier a F1 comparison score analysis was performed on three data subsets - 
