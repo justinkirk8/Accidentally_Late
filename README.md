@@ -317,6 +317,9 @@ See code here for SVM, <insert link>
 See code here for Gradient Booster Classifier, <insert link>
 
 ### Statistical Analysis 
+The correlation heatmap image shows no strong correlation between the features in the dataset. A low correlation score (close to 0) shows no relationship between two features and is typically desireable for Machine Learning models. 
+![Accidentally_Late/Machine_Learning_Model/Visuals "Corr_Heatmap.png"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/Corr_Heatmap.png)
+
 The Random Forest Classifier has a rank features function. Temperature was the top feature.
 ![Accidentally_Late/Machine_Learning_Model/Visuals "Ranked_Features"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/Ranked_Features.png)
 
