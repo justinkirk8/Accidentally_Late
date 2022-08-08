@@ -306,12 +306,17 @@ SCORES SUMMARY BAR CHART
 
 The MLM shows the Random Forest Classifier as the better performer when taking into account all scores with particular attention to the F1 score. Although the dataset doesn't adequately predict severity, although the volume of accidents increased during Covid, there is no indication that these factors are useful in predicting "long delays" or severity. 
 
-See code here for Random Forest Classifier, <insert link>
-See code here for Naive Random Oversampling, <insert link>
-See code here for SMOTE Oversampling, <insert link>
-See code here for SMOTE-ENN, <insert link>
-See code here for SVM, <insert link>
-See code here for Gradient Booster Classifier, <insert link>
+See code here for Random Forest Classifier, https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/ASJ_Model_Files/ASJ_RandomForestClassifier.ipynb<br>
+
+See code here for Naive Random Oversampling, https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/ASJ_Model_Files/ASJ_Naive_Random_Oversampling.ipynb<br>
+
+See code here for SMOTE Oversampling, https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/ASJ_Model_Files/ASJ_SMOTE_Oversampling.ipynb<br>
+
+See code here for SMOTE-ENN, https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/ASJ_Model_Files/ASJ_SMOTEEN.ipynb<br>
+
+See code here for SVM, https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/ASJ_Model_Files/ASJ_SVM.ipynb<br>
+
+See code here for Gradient Booster Classifier, https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/ASJ_Model_Files/ASJ_GradientBoosterClassifier.ipynb<br>
 
 ### Statistical Analysis 
 The correlation heatmap image shows no strong correlation between the features in the dataset. A low correlation score (close to 0) shows no relationship between two features and is typically desireable for Machine Learning models. 
