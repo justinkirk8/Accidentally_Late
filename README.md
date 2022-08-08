@@ -328,6 +328,9 @@ The top ranked features for the data subsets: Florida, COVID time and PreCovid t
 1. (https://www.ibm.com/cloud/blog/supervised-vs-unsupervised-learning)<br>
 2. (https://machinelearningmastery.com/imbalanced-classification-with-python/)<br>
 3. (https://scikit-learn.org)
+4. (https://pythonistaplanet.com/pros-and-cons-of-supervised-machine-learning/)
+5. (https://towardsdatascience.com/why-feature-correlation-matters-a-lot-847e8ba439c4)
+6. (https://www.mastersindatascience.org/learning/statistics-data-science/undersampling/)
 
 ## Dashboard
 The Dashboard and Story were created using Tableau.  After each of the processes,  Tableau was used to view the data.  There were times the charts showed things that were not  easily seen looking at the numbers.  These things helped guide the analysis.
