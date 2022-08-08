@@ -224,7 +224,7 @@ Justin Kirk is the keeper of the GitHub Repository.
 ![Accidentally_Late/Machine_Learning_Model/Visuals "Supervised_Learning"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/Supervised_Learning.png)
 
 ### MLM Diagram
-![Accidentally_Late/Machine_Learning_Model "MLM_Diagram_Updated"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Resources/images/Machine_Learning/MLM_Diagram_Updated.png)
+![Accidentally_Late/Machine_Learning_Model "MLM_Diagram_updated"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/MLM_Diagram_updated.png)
 
 ### - MLM Data Processing - Feature Selection & Engineering 
 The data went through several phases of processing as discussed with the team -
