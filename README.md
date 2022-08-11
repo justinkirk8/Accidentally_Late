@@ -265,16 +265,8 @@ Supervised Learning models work best when the sample size between the target cla
 
 Supervised Learning models are good for classification problems and allow data collection from a previous experience, and are able to produce a data output. Limitations include always in need of updates and can easily be overfitted. In addition, supervised learning models have an inability to learn by itself and cannot give unknown information from the training data. 
 
-### - Trained and ReTraining 
-Using the top model performer, Random Forest Classifier a F1 comparison score analysis was performed on three data subsets - 
-1) the state of Florida with both Covid and PreCovid data
-2) Covid time - 21 months 
-3) PreCovid time - 21 months 
-
-![Accidentally_Late/Machine_Learning_Model/Visuals "RFC_SubsetF1_summary.png"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/RFC_SubsetF1_summary.png)
-
 ### Machine Learning Model Conclusion - Confusion Matrices & Accuracy Scores
-Overall, the models did not perform well with the dataset features in predicting "long delay" traffic. The minority class was not adequately predicted despite the higher accuracy and classification scores in some models. The confusion matrix sheds insight into the inadequacy in regards to predicitng "long delays." Particular attention is focused on the F1 score which is the harmonic mean between precision and recall and is designed to work well in measuring the model performance on imbalanced data. In short, the F1 score sums up predictive performance. 
+Overall, the models did not satisfactorily predict "long delay" traffic. The minority class was not adequately predicted despite the higher accuracy and classification scores in the models. The confusion matrix sheds insight into the inadequacy in regards to predicitng "long delays" with a high amount of false positive and false negatives. Particular attention is focused on the F1 score which is the harmonic mean between precision and recall and is designed to work well in measuring the model performance on imbalanced data. In short, the F1 score sums up predictive performance. 
 
 The overall best performing models looking at all scores were -
 - RandomForestClassifier
@@ -304,7 +296,7 @@ Gradient Booster Classifier
 SCORES SUMMARY BAR CHART
 ![Accidentally_Late/Machine_Learning_Model/Visuals "Scores_Summary_barchart"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/Scores_Summary_barchart.png)
 
-The MLM shows the Random Forest Classifier as the better performer when taking into account all scores with particular attention to the F1 score. Although the dataset doesn't adequately predict severity, although the volume of accidents increased during Covid, there is no indication that these factors are useful in predicting "long delays" or severity. 
+The MLM shows the Random Forest Classifier as the better performer when taking into account all scores with particular attention to the F1 score, the predictive measure and precision "long delay." The confusion matrices, high false positives and false negatives show the features used are not good at predicting severity. 
 
 See code here for Random Forest Classifier, https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/ASJ_Model_Files/ASJ_RandomForestClassifier.ipynb<br>
 
@@ -318,14 +310,27 @@ See code here for SVM, https://github.com/justinkirk8/Accidentally_Late/blob/mai
 
 See code here for Gradient Booster Classifier, https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/ASJ_Model_Files/ASJ_GradientBoosterClassifier.ipynb<br>
 
+### - Trained and ReTraining 
+The following hyperparameters - GridSearchCV and RandomizedSearchCV were used with the Random Forest Classifier model with little improvement to the best score with the best parameters.
+
+See RandomForestClassifier hyperparameter code here, https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/ASJ_Model_Files/ASJ_RandomForestClassifier_HyperP.ipynb<br>
+
+Using the top model performer, Random Forest Classifier a F1 comparison score analysis was performed on three data subsets - 
+1) the state of Florida with both Covid and PreCovid data
+2) Covid time - 21 months 
+3) PreCovid time - 21 months 
+
+The summary below shows the F1 scores remain low with scores below 0.50 and the Covid score below 0.10. 
+![Accidentally_Late/Machine_Learning_Model/Visuals "RFC_SubsetF1_summary.png"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/RFC_SubsetF1_summary.png)
+
 ### Statistical Analysis 
 The correlation heatmap image shows no strong correlation between the features in the dataset. A low correlation score (close to 0) shows no relationship between two features and is typically desireable for Machine Learning models. 
 ![Accidentally_Late/Machine_Learning_Model/Visuals "Corr_Heatmap.png"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/Corr_Heatmap.png)
 
-The Random Forest Classifier has a rank features function. Temperature was the top feature.
+The Random Forest Classifier has a rank features function. Temperature was the top feature, followed by Classification (PreCovid vs Covid) and Wind Speed. 
 ![Accidentally_Late/Machine_Learning_Model/Visuals "Ranked_Features"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/Ranked_Features.png)
 
-The top ranked features for the data subsets: Florida, COVID time and PreCovid time all rank temperature high.
+The top ranked features for the data subsets: Florida, COVID time and PreCovid time all rank temperature high. 
 ![Accidentally_Late/Machine_Learning_Model/Visuals "Top_Features_Comparison_Subsets.png"](https://github.com/justinkirk8/Accidentally_Late/blob/main/Machine_Learning_Model/Visuals/Top_Features_Comparison_Subsets.png)
 
 
